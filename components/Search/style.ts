@@ -14,8 +14,8 @@ export const WhiteDiv = styled.div`
   width: 68.5vw;
   height: 15.8vh;
   background: #fff;
-  border-radius: 0.5em;
-  box-shadow: 0 0.93em 2.5em 0.06em #6e80b45f;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.93rem 2.5rem 0.06rem #6e80b45f;
   padding: 3.95vh 3.125vw;
   display: flex;
 
@@ -24,24 +24,24 @@ export const WhiteDiv = styled.div`
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 16px;
+    gap: 1vw;
     width: 17.125vw;
 
     button {
       padding: 12px 24px;
       background: #4a60a1;
-      border-radius: 4px;
+      border-radius: 0.25rem;
       border: none;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 24px;
       color: #ffffff;
-      margin-left: 63px;
+      margin-left: 4vw;
     }
 
     label {
       font-weight: 600;
-      font-size: 1em;
+      font-size: 1rem;
       line-height: 24px;
       color: #2c3a61;
     }
@@ -49,9 +49,9 @@ export const WhiteDiv = styled.div`
     select {
       border: none;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1rem;
       color: #889099;
-      margin-left: -4px;
+      margin-left: 0.25vw;
 
       :focus {
         outline: 0;
@@ -72,7 +72,7 @@ export const WhiteDiv = styled.div`
       content: "";
       height: 64px;
       width: 1px;
-      margin-left: -40px;
+      margin-left: -2.5vw;
       background-color: #cfd3d6;
       position: absolute;
     }

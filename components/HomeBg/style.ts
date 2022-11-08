@@ -32,14 +32,14 @@ export const Background = styled.section`
     h1 {
       font-style: normal;
       font-weight: 600;
-      font-size: 3em;
+      font-size: 3rem;
       line-height: 72px;
     }
 
     p {
       max-width: 696px;
       font-weight: 400;
-      font-size: 1.15em;
+      font-size: 1.15rem;
       line-height: 28px;
     }
   }
