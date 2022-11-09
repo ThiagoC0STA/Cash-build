@@ -7,7 +7,7 @@ const HomeBg = () => {
   return (
     <Background>
       <Image alt="Casa de madeira" src={HomeBgImage} priority={true} />
-      
+
       <div>
         <h1>Encontre a sua casa dos sonhos</h1>
         <p className="subtitle">
