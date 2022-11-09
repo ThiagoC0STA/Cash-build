@@ -12,6 +12,7 @@ html,
 body {
   background: #ffffff;
   font-family: "Public Sans", sans-serif;
+  height: 200vh;
 }
 
 button {
@@ -21,4 +22,24 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.2em;
+  line-height: 48px;
+  color: #1e2640;
+}
+
+.subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 28px;
+  color: #889099;
+  text-align: center;
+  width: 696px;
 }

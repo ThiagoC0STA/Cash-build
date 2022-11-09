@@ -9,7 +9,6 @@ export const Background = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
 
   img {
     object-fit: cover;
@@ -34,13 +33,11 @@ export const Background = styled.section`
       font-weight: 600;
       font-size: 3rem;
       line-height: 72px;
+      color: #fff;
     }
 
     p {
-      max-width: 696px;
-      font-weight: 400;
-      font-size: 1.15rem;
-      line-height: 28px;
+      color: #fff;
     }
   }
 `;

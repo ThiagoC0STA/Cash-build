@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SearchComponent = styled.section`
-  position: absolute;
+  position: relative;
   margin-top: -8.6vh;
   left: 0;
   right: 0;
@@ -15,7 +15,7 @@ export const WhiteDiv = styled.div`
   height: 15.8vh;
   background: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0 0.93rem 2.5rem 0.06rem #6e80b45f;
+  box-shadow: 0 0.93rem 2.5rem 0.06rem #6e80b431;
   padding: 3.95vh 3.125vw;
   display: flex;
 
@@ -51,7 +51,7 @@ export const WhiteDiv = styled.div`
       font-weight: 400;
       font-size: 1rem;
       color: #889099;
-      margin-left: 0.25vw;
+      margin-left: -4px;
 
       :focus {
         outline: 0;

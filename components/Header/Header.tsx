@@ -13,9 +13,9 @@ const Header = () => {
       </Link>
 
       <nav>
-        <Link href="/contact">HOME</Link>
-        <Link href="/contact">SOBRE NÓS</Link>
-        <Link href="/contact">PROPRIEDADES</Link>
+        <Link href="/">HOME</Link>
+        <Link href="/about">SOBRE NÓS</Link>
+        <Link href="/properties">PROPRIEDADES</Link>
         <Link href="/contact">CONTATO</Link>
       </nav>
     </HeaderComponent>

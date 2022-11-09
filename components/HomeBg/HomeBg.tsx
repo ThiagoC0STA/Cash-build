@@ -17,7 +17,7 @@ const HomeBg = () => {
         <figcaption>
           <div>
             <h1>Encontre a sua casa dos sonhos</h1>
-            <p>
+            <p className="subtitle">
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
               posuere cubilia curae; Proin sodales ultrices nulla blandit
               volutpat.
