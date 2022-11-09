@@ -21,11 +21,19 @@ export const CitiesSection = styled.section`
 export const CitiesDiv = styled.div`
   margin-bottom: 2vh;
   color: #ffffff;
+`;
 
-  div {
-    width: 25vw;
-    height: 15vw;
+export const Card = styled.div`
+  width: 25vw;
+  height: 15vw;
+  border-radius: 8px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
+    z-index: 0;
   }
 
   h3 {
@@ -47,26 +55,15 @@ export const CitiesDiv = styled.div`
     line-height: 24px;
   }
 
-  figure {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    img {
-      object-fit: cover;
-      width: 26.5vw;
-      height: 15vw;
-      border-radius: 8px;
-    }
-
-    div {
-      background: linear-gradient(
-        180deg,
-        rgba(59, 77, 129, 0.5) -12.86%,
-        rgba(59, 77, 129, 0) 106.85%
-      );
-      position: absolute;
-      border-radius: 8px;
-    }
+  div {
+    position: absolute;
+    border-radius: 8px;
+    width: 25vw;
+    height: 15vw;
+    background: linear-gradient(
+      180deg,
+      rgba(59, 77, 129, 0.6) -12.86%,
+      rgba(59, 77, 129, 0) 106.85%
+    );
   }
 `;

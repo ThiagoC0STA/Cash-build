@@ -12,32 +12,30 @@ export const Background = styled.section`
 
   img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
-  figcaption {
-    position: relative;
-    text-align: center;
-    height: auto;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    gap: 24px;
+    margin-top: 50px;
+  }
 
-    div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      margin-top: 50px;
-      gap: 24px;
-    }
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 72px;
+    color: #fff;
+  }
 
-    h1 {
-      font-style: normal;
-      font-weight: 600;
-      font-size: 3rem;
-      line-height: 72px;
-      color: #fff;
-    }
-
-    p {
-      color: #fff;
-    }
+  p {
+    color: #fff;
   }
 `;

@@ -50,7 +50,7 @@ export const WhiteDiv = styled.div`
       border: none;
       font-weight: 400;
       font-size: 1rem;
-      color: #889099;
+      color: #6a6a6a;
       margin-left: -4px;
 
       :focus {

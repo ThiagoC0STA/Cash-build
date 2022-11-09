@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { Cities } from "./Cities";
-import { CitiesDiv, CitiesSection } from "./style";
+import { Card, CitiesDiv, CitiesSection } from "./style";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
@@ -31,21 +31,14 @@ const MainCities = () => {
         <Slider {...settings}>
           {Cities.map(({ id, name, image, quantity }) => (
             <CitiesDiv key={id}>
-              <div>
+              <Card>
+                <div />
                 <h3>{name}</h3>
                 <p>
                   {quantity} {quantity === 1 ? "propriedade" : "propriedades"}
                 </p>
-                <figure>
-                  <Image
-                    src={image}
-                    alt="Imagem da cidade"
-                    layout="fill"
-                    quality={100}
-                  />
-                  <div></div>
-                </figure>
-              </div>
+                <Image src={image} alt="Imagem da cidade" quality={100} />
+              </Card>
             </CitiesDiv>
           ))}
         </Slider>
