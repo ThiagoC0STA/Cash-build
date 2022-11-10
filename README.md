@@ -4,8 +4,8 @@
 [x] Fazer o header
 [x] Fazer o background e a barra de pesquisa da página home
 [x] Fazer o propriedades pela cidade
-[] Fazer o global state.
-[] Mudar as imagens das cidades.
+[x] Fazer o global state.
+[x] Mudar as imagens das cidades.
 [] Criar o array principal, com todas as imagens da foto, nome, preço, garagem, banheiros, quartos, metros quadrados, cidade, tipo da propriedade e se está para alugar ou comprar.
 [] Filtrar array para mostrar os 9 ultimos itens, e fazer o recentes na página principal.
 [] Finalizar a página principal e o Footer.

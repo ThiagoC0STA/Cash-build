@@ -14,18 +14,18 @@ export const CitiesSection = styled.section`
 
   .container {
     width: 100%;
-    padding: 0 10.2vw;
+    padding: 0 15.2vw;
   }
 `;
 
 export const CitiesDiv = styled.div`
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   color: #ffffff;
 `;
 
 export const Card = styled.div`
-  width: 25vw;
-  height: 15vw;
+  width: 22vw;
+  height: 12vw;
   border-radius: 8px;
 
   img {
@@ -58,8 +58,8 @@ export const Card = styled.div`
   div {
     position: absolute;
     border-radius: 8px;
-    width: 25vw;
-    height: 15vw;
+    width: 22vw;
+    height: 12vw;
     background: linear-gradient(
       180deg,
       rgba(59, 77, 129, 0.6) -12.86%,
