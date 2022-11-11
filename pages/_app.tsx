@@ -8,19 +8,14 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Rodc Natural Produts</title>
-        <meta
-          name="description"
-          content="RN the best natural products website"
-        />
+        <title>Cash Building</title>
+        <meta name="description" content="A melhor imobiliária da região" />
       </Head>
 
       <GlobalContext>
         <Header />
-        
+        <Component {...pageProps} />
       </GlobalContext>
-
-      <Component {...pageProps} />
     </>
   );
 }

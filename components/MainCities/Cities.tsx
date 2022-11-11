@@ -1,4 +1,3 @@
-import Exemplo from "../../public/images/cities/exemplo.png";
 import SJP from "../../public/images/cities/sao-jose.jpg";
 import SaoPaulo from "../../public/images/cities/sao-paulo.jpg";
 import Curitiba from "../../public/images/cities/curitiba.jpg";

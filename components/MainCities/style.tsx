@@ -23,6 +23,19 @@ export const CitiesDiv = styled.div`
   color: #ffffff;
 `;
 
+export const BlueDiv = styled.div`
+  font-weight: 400;
+  font-size: 14.9515px;
+  line-height: 23px;
+  color: #ffffff;
+  background: #4a60a1;
+  border-radius: 4px;
+  padding: 4.27184px 12.8155px;
+  position: absolute;
+  z-index: 1;
+  margin: 7px;
+`;
+
 export const Card = styled.div`
   width: 22vw;
   height: 12vw;
