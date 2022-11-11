@@ -17,7 +17,7 @@ export const AllProperties = [
   {
     mainImage: Casa1,
     allImages: [{}],
-    name: "apartamento1",
+    name: "92 ALLIUM PLACE, ORLANDO FL 32827",
     price: 30000,
     garages: 2,
     bathrooms: 1,
@@ -53,7 +53,7 @@ export const AllProperties = [
   {
     mainImage: Casa4,
     allImages: {},
-    name: "apartamento",
+    name: "92 ALLIUM PLACE, ORLANDO FL 32827",
     price: 30000,
     garages: 2,
     bathrooms: 1,
@@ -65,7 +65,7 @@ export const AllProperties = [
   {
     mainImage: Casa5,
     allImages: {},
-    name: "apartamento",
+    name: "92 ALLIUM PLACE, ORLANDO FL 32827",
     price: 30000,
     garages: 2,
     bathrooms: 1,
@@ -77,7 +77,7 @@ export const AllProperties = [
   {
     mainImage: Casa6,
     allImages: {},
-    name: "apartamento",
+    name: "92 ALLIUM PLACE, ORLANDO FL 32827",
     price: 30000,
     garages: 2,
     bathrooms: 1,
@@ -89,7 +89,7 @@ export const AllProperties = [
   {
     mainImage: Casa7,
     allImages: {},
-    name: "apartamento",
+    name: "92 ALLIUM PLACE, ORLANDO FL 32827",
     price: 30000,
     garages: 2,
     bathrooms: 1,
@@ -101,7 +101,7 @@ export const AllProperties = [
   {
     mainImage: Ap1,
     allImages: {},
-    name: "Penultimo",
+    name: "92 ALLIUM PLACE, ORLANDO FL 32827",
     price: 30000,
     garages: 2,
     bathrooms: 1,
@@ -113,7 +113,7 @@ export const AllProperties = [
   {
     mainImage: Ap2,
     allImages: {},
-    name: "Ultimo",
+    name: "92 ALLIUM PLACE, ORLANDO FL 32827",
     price: 30000,
     garages: 2,
     bathrooms: 1,
