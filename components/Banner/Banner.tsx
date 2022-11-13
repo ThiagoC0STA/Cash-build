@@ -9,10 +9,10 @@ const Banner = () => {
       <Image src={BannerImg} alt="banner" />
 
       <div>
-        <h2>Find Best Place For Living</h2>
+        <h2>Encontre o melhor lugar para viver</h2>
         <p className="subtitle">
-          Spend vacations in best hotels and resorts find the great place of
-          your choice using different searching options.
+          Passe férias nos melhores hotéis e resorts encontre o ótimo lugar de
+          sua escolha usando diferentes opções de pesquisa.
         </p>
 
         <button>Faça contato conosco</button>
