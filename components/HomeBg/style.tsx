@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
 export const Background = styled.section`
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 0;
   height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -89px;
 
   img {
     object-fit: cover;

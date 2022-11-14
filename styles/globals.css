@@ -12,7 +12,6 @@ html,
 body {
   background: #ffffff;
   font-family: "Public Sans", sans-serif;
-  height: 200vh;
 }
 
 button {
@@ -41,6 +40,6 @@ h2 {
   font-size: 1.15rem;
   line-height: 28px;
   color: #6d6d6d;
-  text-align: center;
   width: 696px;
+  text-align: center;
 }

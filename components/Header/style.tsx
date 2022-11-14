@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 export const HeaderComponent = styled.header`
-  z-index: 999;
-  position: absolute;
-  left: 0;
-  right: 0;
   background: transparent;
   margin: 3vh 6.25vw;
   display: flex;
@@ -16,9 +12,13 @@ export const HeaderComponent = styled.header`
     align-items: center;
     gap: 8px;
     font-size: 1.4rem;
-    color: #fff;
     font-family: "Roboto Slab", serif;
     font-weight: 300;
+    z-index: 999;
+  }
+
+  .selected {
+    font-weight: 600;
   }
 
   nav {
@@ -30,5 +30,6 @@ export const HeaderComponent = styled.header`
     font-size: 0.85rem;
     line-height: 22px;
     color: #ffffff;
+    z-index: 999;
   }
 `;

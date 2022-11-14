@@ -1,7 +1,12 @@
 import React from "react";
+import OtherBgs from "../components/OtherBgs/OtherBgs";
 
 const About = () => {
-  return <div></div>;
+  return (
+    <div>
+      <OtherBgs />
+    </div>
+  );
 };
 
 export default About;

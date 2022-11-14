@@ -24,6 +24,7 @@ export const Card = styled.div`
 
   img {
     width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 6.5px 6.5px 0px 0px;
   }
@@ -66,7 +67,8 @@ export const Info = styled.div`
 
   div {
     img {
-      width: auto;
+      width: 24px;
+      height: 24px;
     }
   }
 

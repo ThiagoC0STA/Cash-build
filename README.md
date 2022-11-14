@@ -9,11 +9,13 @@
 [x] Criar o array principal, com todas as imagens da foto, nome, preço, garagem, banheiros, quartos, metros quadrados, cidade, tipo da propriedade e se está para alugar ou comprar.
 [x] Filtrar array para mostrar os 9 ultimos itens, e fazer o recentes na página principal.
 [x] Finalizar a página principal e o Footer.
+[x] Fazer todos os backgrounds
 
 [] Fazer a página de propriedades de forma estática.
 [] Fazer a página do sobre nós.
 [] Fazer o design da página de contato.
 [] Fazer a página de contato.
+
 [] Fazer o design de quando clicar em uma propriedade abrir uma div nova.
 [] Implementar essa nova função para abrir e fechar a div com as informações.
 [] Implementar a função de enviar o form para entrar em contato sobre o imóvel selecionado.
