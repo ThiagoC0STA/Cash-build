@@ -76,7 +76,7 @@ const RecentProperties = () => {
 
                       <div>
                         <h5>{city}</h5>
-                        <button>
+                        <button tabIndex={-1}>
                           <Image src={Share} alt="Compartilhar" />
                         </button>
                       </div>
