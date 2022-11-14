@@ -10,14 +10,14 @@ export const AboutSection = styled.section`
     text-align: start;
     margin-bottom: 50px;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 2.1rem;
     line-height: 24px;
   }
 
   p {
     width: 730px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 28px;
     margin-top: 30px;
   }

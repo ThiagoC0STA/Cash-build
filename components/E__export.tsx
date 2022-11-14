@@ -15,6 +15,7 @@ export { default as BackgroundImage } from "/public/images/bg.jpg";
 export { default as Building } from "/public/images/building.jpg";
 export { default as BannerImg } from "/public/images/banner.jpg";
 export { default as Car } from "/public/icons/car.svg";
+export { default as FilterIcon } from "/public/icons/filter-icon.svg";
 export { default as Bathroom } from "/public/icons/bathroom.svg";
 export { default as Bed } from "/public/icons/bed.svg";
 export { default as Share } from "/public/icons/share.svg";

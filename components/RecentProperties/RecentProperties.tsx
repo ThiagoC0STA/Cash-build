@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
-import { Card, Container, Info, Recent } from "./style";
+import { Card, Container, Info, Recent, BlueDiv } from "./style";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Contexts } from "../../contexts/GlobalContext";
-import { BlueDiv } from "../MainCities/style";
 import { Bathroom, Bed, Car, Share } from "../E__export";
 
 const RecentProperties = () => {
@@ -14,8 +13,7 @@ const RecentProperties = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    dots: false,
-    arrows: true,
+    dots: true,
     autoplay: true,
     autoplaySpeed: 4000,
   };
@@ -50,7 +48,7 @@ const RecentProperties = () => {
                 <div key={index}>
                   <Card>
                     <BlueDiv>{state}</BlueDiv>
-                    <Image src={mainImage} alt="Imagem da cidade" />
+                    <Image src={mainImage} alt="Imagem da propriedade" />
                     <h3>{name}</h3>
                     <h4>
                       {price.toLocaleString("pt-BR", {

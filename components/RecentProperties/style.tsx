@@ -14,10 +14,11 @@ export const Recent = styled.section`
 `;
 
 export const Card = styled.div`
-  width: 400px;
-  height: 512px;
+  width: 25vw;
+  height: 63.2vh;
   background: #ffffff;
   margin-left: 6px;
+  margin-top: 25px;
   box-shadow: 0 0 10px rgba(59, 77, 129, 0.08);
   border-radius: 6.5px;
   border: 2px solid rgb(242, 242, 242);
@@ -117,4 +118,17 @@ export const Info = styled.div`
       position: absolute;
     }
   }
+`;
+
+export const BlueDiv = styled.div`
+  font-weight: 400;
+  font-size: 14.9515px;
+  line-height: 23px;
+  color: #ffffff;
+  background: #4a60a1;
+  border-radius: 4px;
+  padding: 4.27184px 12.8155px;
+  position: absolute;
+  z-index: 1;
+  margin: 7px;
 `;

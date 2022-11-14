@@ -21,11 +21,11 @@ export const Texts = styled.div`
   gap: 12px;
 
   p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   h2 {
-    font-size: 45px;
+    font-size: 2.8rem;
     color: #fff;
   }
 
