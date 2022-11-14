@@ -11,7 +11,7 @@
 [x] Finalizar a página principal e o Footer.
 [x] Fazer todos os backgrounds
 [x] Fazer a página do sobre nós.
-[] Fazer a página de propriedades de forma estática.
+[x] Fazer a página de propriedades de forma estática.
 
 [] Fazer o design da página de contato.
 [] Fazer a página de contato.

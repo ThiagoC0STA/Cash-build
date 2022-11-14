@@ -5,7 +5,6 @@ export const BannerElement = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
 
   img {
     object-fit: cover;
