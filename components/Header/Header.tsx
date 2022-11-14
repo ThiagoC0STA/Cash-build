@@ -42,15 +42,18 @@ const Header = () => {
         <Link className={current === "home" ? "selected" : ""} href="/">
           HOME
         </Link>
-        <Link className={current === "about" ? "selected" : ""} href="/about">
-          SOBRE NÓS
-        </Link>
+
         <Link
           className={current === "properties" ? "selected" : ""}
           href="/properties"
         >
           PROPRIEDADES
         </Link>
+
+        <Link className={current === "about" ? "selected" : ""} href="/about">
+          SOBRE NÓS
+        </Link>
+
         <Link
           className={current === "contact" ? "selected" : ""}
           href="/contact"

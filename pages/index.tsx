@@ -3,11 +3,10 @@ import Banner from "../components/Banner/Banner";
 import { HomeBg, RecentProperties } from "../components/E__export";
 import MainCities from "../components/MainCities/MainCities";
 import Search from "../components/Search/Search";
-import { HomeDiv } from "../styles/pageStyle";
 
 const Index = () => {
   return (
-    <HomeDiv>
+    <>
       <main>
         <HomeBg />
         <Search />
@@ -15,7 +14,7 @@ const Index = () => {
         <RecentProperties />
         <Banner />
       </main>
-    </HomeDiv>
+    </>
   );
 };
 
