@@ -11,7 +11,7 @@ export const SearchComponent = styled.section`
 `;
 
 export const WhiteDiv = styled.div`
-  width: 68.5vw;
+  width: 55.3vw;
   height: 15.8vh;
   background: #fff;
   border-radius: 0.5rem;

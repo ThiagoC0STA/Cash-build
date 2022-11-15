@@ -6,6 +6,7 @@ export const PropertiesSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 100px;
 `;
 
 export const Filters = styled.div`

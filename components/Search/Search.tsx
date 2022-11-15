@@ -25,14 +25,6 @@ const Search = () => {
         </div>
 
         <div>
-          <label htmlFor="price">Preço</label>
-
-          <select id="price">
-            <option>Selecione o preço</option>
-          </select>
-        </div>
-
-        <div>
           <button>Pesquisar</button>
         </div>
       </WhiteDiv>

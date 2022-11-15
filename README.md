@@ -12,11 +12,11 @@
 [x] Fazer todos os backgrounds
 [x] Fazer a página do sobre nós.
 [x] Fazer a página de propriedades de forma estática.
-
-[] Fazer o design da página de contato.
+[x] Fazer o design da página de contato.
 [] Fazer a página de contato.
-[] Fazer um design melhor para a página "sobre nós".
 
+
+[] Fazer um design melhor para a página "sobre nós".
 [] Fazer o design de quando clicar em uma propriedade abrir uma div nova.
 [] Implementar essa nova função para abrir e fechar a div com as informações.
 [] Implementar a função de enviar o form para entrar em contato sobre o imóvel selecionado.
