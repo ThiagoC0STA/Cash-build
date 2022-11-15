@@ -1,17 +1,17 @@
 /*--------------- Casas --------------- */
 
-import Casa1 from "../../public/images/casas/casa1.jpg";
-import Casa2 from "../../public/images/casas/casa2.jpg";
-import Casa3 from "../../public/images/casas/casa3.jpg";
-import Casa4 from "../../public/images/casas/casa4.jpg";
-import Casa5 from "../../public/images/casas/casa5.jpg";
-import Casa6 from "../../public/images/casas/casa6.jpg";
-import Casa7 from "../../public/images/casas/casa7.jpg";
+import Casa1 from "../../public/images/casas/casa1/casa1.jpg";
+import Casa2 from "../../public/images/casas/casa2/casa2.jpg";
+import Casa3 from "../../public/images/casas/casa3/casa3.jpg";
+import Casa4 from "../../public/images/casas/casa4/casa4.jpg";
+import Casa5 from "../../public/images/casas/casa5/casa5.jpg";
+import Casa6 from "../../public/images/casas/casa6/casa6.jpg";
+import Casa7 from "../../public/images/casas/casa7/casa7.jpg";
 
 /*--------------- Aptos --------------- */
 
-import Ap1 from "../../public/images/apartamentos/ap1.jpg";
-import Ap2 from "../../public/images/apartamentos/ap2.jpg";
+import Ap1 from "../../public/images/apartamentos/ap1/ap1.jpg";
+import Ap2 from "../../public/images/apartamentos/ap2/ap2.jpg";
 
 export const AllProperties = [
   {

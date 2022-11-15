@@ -8,9 +8,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Bathroom, Bed, Car, Share } from "../E__export";
 import { Info, Card, BlueDiv } from "../RecentProperties/style";
+import { useRouter } from "next/router";
 
 const PropertiesComponent = () => {
   const { mainItems } = useContext(Contexts);
+  const router = useRouter();
+  console.log(router);
 
   const settings = {
     speed: 700,
@@ -57,7 +60,12 @@ const PropertiesComponent = () => {
               <Cards key={index}>
                 <Card>
                   <BlueDiv>{state}</BlueDiv>
-                  <Image src={mainImage} alt="Imagem da cidade" />
+                  <Image
+                    src={mainImage}
+                    alt="Imagem da cidade"
+                    onClick={() => router.push(`/property/${index}`)}
+                    style={{ cursor: "pointer" }}
+                  />
                   <h3>{name}</h3>
                   <h4>
                     {price.toLocaleString("pt-BR", {
@@ -65,6 +73,7 @@ const PropertiesComponent = () => {
                       currency: "BRL",
                     })}
                   </h4>
+                  
                   <Info>
                     <div>
                       <figure>

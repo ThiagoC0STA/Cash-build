@@ -84,6 +84,7 @@ export const Info = styled.div`
     align-items: center;
     justify-content: start;
     gap: 24px;
+    margin-left: 11px;
   }
 
   div:last-child {
