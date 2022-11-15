@@ -14,11 +14,11 @@
 [x] Fazer a página de propriedades de forma estática.
 [x] Fazer o design da página de contato.
 [x] Fazer a página de contato.
-[x] Fazer o design de quando clicar em uma propriedade abrir uma página nova.
-[ ] Fazer a rota dinamica para cada propriedade.
+[x] Fazer a rota dinamica para cada propriedade.
 
+[] Fazer o design de quando clicar em uma propriedade abrir uma página nova.
 [] Fazer um design melhor para a página "sobre nós".
-
+[] Arrumar as tipagens dos maps.
 [] Implementar essa nova função para abrir e fechar a div com as informações.
 [] Implementar a função de enviar o form para entrar em contato sobre o imóvel selecionado.
 [] Fazer os filtros funcionarem.

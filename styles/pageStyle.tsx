@@ -22,3 +22,7 @@ export const AboutSection = styled.section`
     margin-top: 30px;
   }
 `;
+
+export const PropertySection = styled.section`
+  
+`
