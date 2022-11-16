@@ -22,7 +22,7 @@ const MainCities = () => {
 
   return (
     <CitiesSection>
-      <h2>Propriedades pela cidade</h2>
+      <h2>Localizações de nossas propriedades</h2>
       <p className="subtitle">
         Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
         cubilia curae; Proin sodales ultrices nulla blandit volutpat.

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState } from "react";
 import Slider from "react-slick";
-import { LocationIcon, Share } from "../../components/E__export";
+import { LocationIcon, RightArrow, Share } from "../../components/E__export";
 import { Contexts } from "../../contexts/GlobalContext";
 import {
   CarousselStyle,
@@ -15,6 +15,7 @@ import {
   PropertyInfo,
   ShareIcon,
   StateProperty,
+  StickyElement,
 } from "../../styles/pageStyle";
 
 const Property = () => {
@@ -66,6 +67,12 @@ const Property = () => {
           ) => (
             <PropertyInfo key={index}>
               <ShareIcon>
+                <nav>
+                  <Link href="/">Home</Link>
+                  <Image src={RightArrow} alt=">" />
+                  <Link href="/properties">Propriedades</Link>
+                </nav>
+
                 <button>
                   <Image src={Share} alt="compartilhar" />
                 </button>
@@ -136,6 +143,19 @@ const Property = () => {
                     </Slider>
                   </Item2>
                 </Items>
+
+                <StickyElement>
+                  <form action="">
+                    <input type="text" placeholder="Nome" />
+                    <input type="text" placeholder="Telefone" />
+                    <input type="text" placeholder="Email" />
+                    <textarea>{`Olá, estou interessado no ${name}`}</textarea>
+                    <div>
+                      <button>Enviar</button>
+                      <button>Ligar</button>
+                    </div>
+                  </form>
+                </StickyElement>
               </CarousselStyle>
             </PropertyInfo>
           )

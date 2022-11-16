@@ -34,7 +34,17 @@ export const ShareIcon = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+
+  nav {
+    display: flex;
+    flex-direction: wrap;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+
+    color: #00aeff;
+  }
 
   button {
     background: #edeff6;
@@ -79,7 +89,7 @@ export const StateProperty = styled.div`
     font-size: 13px;
     padding: 7px 10px 6px;
     color: #fff;
-    background-color: #74a13a;
+    background-color: #28a745;
     border-radius: 4px;
   }
 `;
@@ -101,8 +111,9 @@ export const Location = styled.div`
 export const CarousselStyle = styled.div`
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: start;
+  gap: 20px;
 `;
 
 export const Items = styled.div`
@@ -145,5 +156,91 @@ export const Item2 = styled.div`
   img {
     width: 190px;
     height: 120px;
+  }
+`;
+
+export const StickyElement = styled.aside`
+  height: 200vh;
+  margin-top: 20px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    width: 23vw;
+    position: sticky;
+    top: 20px;
+    padding: 50px 15px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(59, 76, 129, 0.1);
+    border-radius: 6.5px;
+    border: 1px solid rgb(221, 221, 221);
+
+    input,
+    textarea {
+      width: 90%;
+      border: 1px solid #dce0e0;
+      font-size: 15px;
+      padding: 0.375rem 0.75rem;
+
+      ::placeholder {
+        color: #d3d3d3;
+      }
+    }
+
+    input {
+      width: 90%;
+      height: 40px;
+      border: 1px solid #dce0e0;
+    }
+
+    textarea {
+      resize: vertical;
+      font-family: "Public Sans", sans-serif;
+      height: 80px;
+    }
+
+    div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      button {
+        width: calc(50% - 20px);
+        font-size: 15px;
+        border: none;
+        font-weight: bold;
+        padding: 0 9px;
+        line-height: 40px;
+        border-radius: 5px;
+      }
+
+      button:first-child {
+        background-color: #28a745;
+        color: #fff;
+        border: 1px solid #28a745;
+        transition: all ease 0.4s;
+
+        :hover {
+          background-color: #2cd052;
+        }
+      }
+
+      button:last-child {
+        background-color: #fff;
+        color: #28a745;
+        border: 1px solid #28a745;
+        transition: all ease 0.4s;
+
+        :hover {
+          background-color: #28a745;
+          color: #fff;
+        }
+      }
+    }
   }
 `;
