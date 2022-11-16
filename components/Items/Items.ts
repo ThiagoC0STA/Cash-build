@@ -1,12 +1,12 @@
 /*------------------------------ Casas ------------------------------ */
 
-import Casa1 from "../../public/images/casas/casa1/casa1.jpg";
-import Casa2 from "../../public/images/casas/casa2/casa2.jpg";
-import Casa3 from "../../public/images/casas/casa3/casa3.jpg";
-import Casa4 from "../../public/images/casas/casa4/casa4.jpg";
-import Casa5 from "../../public/images/casas/casa5/casa5.jpg";
-import Casa6 from "../../public/images/casas/casa6/casa6.jpg";
-import Casa7 from "../../public/images/casas/casa7/casa7.jpg";
+import Casa1 from "../../public/images/casas/Casa1/casa1.jpg";
+import Casa2 from "../../public/images/casas/Casa2/casa2.jpg";
+import Casa3 from "../../public/images/casas/Casa3/casa3.jpg";
+import Casa4 from "../../public/images/casas/Casa4/casa4.jpg";
+import Casa5 from "../../public/images/casas/Casa5/casa5.jpg";
+import Casa6 from "../../public/images/casas/Casa6/casa6.jpg";
+import Casa7 from "../../public/images/casas/Casa7/casa7.jpg";
 
 /*------------------------------ Aptos ------------------------------ */
 
