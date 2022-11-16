@@ -1,6 +1,6 @@
 export type PropertiesType = {
   mainImage: any;
-  allImages: [];
+  allImages: any;
   name: string;
   price: number;
   garages: number;
@@ -8,5 +8,5 @@ export type PropertiesType = {
   bedrooms: number;
   city: string;
   propertieType: string;
-  state: string;
+  forRent: boolean;
 };
