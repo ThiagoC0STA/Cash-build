@@ -1,6 +1,6 @@
 export type PropertiesType = {
   mainImage: any;
-  allImages: any;
+  allImages: [];
   name: string;
   price: number;
   garages: number;
