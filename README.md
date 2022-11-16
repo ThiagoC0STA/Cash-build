@@ -16,7 +16,10 @@
 [x] Fazer a página de contato.
 [x] Fazer a rota dinamica para cada propriedade.
 
-[] Fazer o design de quando clicar em uma propriedade abrir uma página nova.
+[] Fazer a pagina para mostrar apenas uma propriedade (design: https://www.darrelestate.com/property/modern-apartment-on-the-bay/)
+
+[] fazer a função: {forRent && <h3>/mes</h3>} nos cards
+
 [] Fazer um design melhor para a página "sobre nós".
 [] Arrumar as tipagens dos maps.
 [] Implementar essa nova função para abrir e fechar a div com as informações.

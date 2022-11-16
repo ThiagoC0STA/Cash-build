@@ -22,3 +22,4 @@ export { default as Share } from "/public/icons/share.svg";
 export { default as Facebook } from "/public/icons/facebook.svg";
 export { default as Instagram } from "/public/icons/instagram.svg";
 export { default as Linkedin } from "/public/icons/linkedin.svg";
+export { default as LocationIcon } from "/public/icons/location.svg";

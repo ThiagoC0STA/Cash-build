@@ -25,9 +25,10 @@ export const Card = styled.div`
 
   img {
     width: 100%;
-    height: auto;
+    height: 240px;
     object-fit: cover;
     border-radius: 6.5px 6.5px 0px 0px;
+    cursor: pointer;
   }
 
   h3 {

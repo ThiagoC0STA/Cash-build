@@ -13,7 +13,7 @@ export const Filters = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 80vw;
 
   div {
     display: flex;

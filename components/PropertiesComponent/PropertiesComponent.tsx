@@ -48,7 +48,7 @@ const PropertiesComponent = () => {
               {
                 name,
                 mainImage,
-                state,
+                forRent,
                 price,
                 garages,
                 bathrooms,
@@ -59,7 +59,7 @@ const PropertiesComponent = () => {
             ) => (
               <Cards key={index}>
                 <Card>
-                  <BlueDiv>{state}</BlueDiv>
+                  <BlueDiv>{forRent ? "Para Alugar" : "Para Vender"}</BlueDiv>
                   <Image
                     src={mainImage}
                     alt="Imagem da cidade"
@@ -73,19 +73,31 @@ const PropertiesComponent = () => {
                       currency: "BRL",
                     })}
                   </h4>
-                  
+
                   <Info>
                     <div>
                       <figure>
-                        <Image src={Car} alt="garagens" />
+                        <Image
+                          src={Car}
+                          alt="garagens"
+                          onClick={() => router.push(`/property/${index}`)}
+                        />
                         <figcaption>{garages}</figcaption>
                       </figure>
                       <figure>
-                        <Image src={Bathroom} alt="Banheiros" />
+                        <Image
+                          src={Bathroom}
+                          alt="Banheiros"
+                          onClick={() => router.push(`/property/${index}`)}
+                        />
                         <figcaption>{bathrooms}</figcaption>
                       </figure>
                       <figure>
-                        <Image src={Bed} alt="Quartos" />
+                        <Image
+                          src={Bed}
+                          alt="Quartos"
+                          onClick={() => router.push(`/property/${index}`)}
+                        />
                         <figcaption>{bedrooms}</figcaption>
                       </figure>
                     </div>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderComponent = styled.header`
   background: transparent;
-  margin: 3vh 6.25vw;
+  margin: 3vh 10vw;
   display: flex;
   align-items: center;
   justify-content: space-between;

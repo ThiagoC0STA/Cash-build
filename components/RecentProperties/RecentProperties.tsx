@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Contexts } from "../../contexts/GlobalContext";
 import { Bathroom, Bed, Car, Share } from "../E__export";
+import { useRouter } from "next/router";
 
 const RecentProperties = () => {
   const settings = {
@@ -19,6 +20,7 @@ const RecentProperties = () => {
   };
 
   const { mainItems } = useContext(Contexts);
+  const router = useRouter();
 
   return (
     <Recent>
@@ -36,7 +38,7 @@ const RecentProperties = () => {
                 {
                   name,
                   mainImage,
-                  state,
+                  forRent,
                   price,
                   garages,
                   bathrooms,
@@ -47,8 +49,12 @@ const RecentProperties = () => {
               ) => (
                 <div key={index}>
                   <Card>
-                    <BlueDiv>{state}</BlueDiv>
-                    <Image src={mainImage} alt="Imagem da propriedade" />
+                    <BlueDiv>{forRent ? "Para Alugar" : "Para Vender"}</BlueDiv>
+                    <Image
+                      onClick={() => router.push(`/property/${index}`)}
+                      src={mainImage}
+                      alt="Imagem da propriedade"
+                    />
                     <h3>{name}</h3>
                     <h4>
                       {price.toLocaleString("pt-BR", {
@@ -59,15 +65,27 @@ const RecentProperties = () => {
                     <Info>
                       <div>
                         <figure>
-                          <Image src={Car} alt="garagens" />
+                          <Image
+                            src={Car}
+                            alt="garagens"
+                            onClick={() => router.push(`/property/${index}`)}
+                          />
                           <figcaption>{garages}</figcaption>
                         </figure>
                         <figure>
-                          <Image src={Bathroom} alt="Banheiros" />
+                          <Image
+                            src={Bathroom}
+                            alt="Banheiros"
+                            onClick={() => router.push(`/property/${index}`)}
+                          />
                           <figcaption>{bathrooms}</figcaption>
                         </figure>
                         <figure>
-                          <Image src={Bed} alt="Quartos" />
+                          <Image
+                            src={Bed}
+                            alt="Quartos"
+                            onClick={() => router.push(`/property/${index}`)}
+                          />
                           <figcaption>{bedrooms}</figcaption>
                         </figure>
                       </div>

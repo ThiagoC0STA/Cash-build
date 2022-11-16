@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <GlobalContext>
         <Header />
         <Component {...pageProps} />
-        <Footer />
+        {/* <Footer /> */}
       </GlobalContext>
     </>
   );
