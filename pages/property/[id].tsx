@@ -3,7 +3,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState } from "react";
 import Slider from "react-slick";
-import { LocationIcon, RightArrow, Share } from "../../components/E__export";
+import {
+  Bathroom,
+  Bed,
+  Car,
+  LocationIcon,
+  RightArrow,
+  Share,
+} from "../../components/E__export";
 import { Contexts } from "../../contexts/GlobalContext";
 import {
   CarousselStyle,
@@ -12,6 +19,7 @@ import {
   Items,
   Location,
   NameAndPrice,
+  OverviewContainer,
   PropertyInfo,
   ShareIcon,
   StateProperty,
@@ -62,6 +70,7 @@ const Property = () => {
               bedrooms,
               city,
               address,
+              description
             }: any,
             index: any
           ) => (
@@ -97,8 +106,25 @@ const Property = () => {
               </StateProperty>
 
               <Location>
-                <Image src={LocationIcon} alt="Localização" />
-                <p>{address + ", " + city}</p>
+                <div>
+                  <Image src={LocationIcon} alt="Localização" />
+                  <p>{address + ", " + city}</p>
+                </div>
+
+                <div>
+                  <figure>
+                    <Image src={Bed} alt="Camas" width="22" height="22" />
+                    <p>{bedrooms}</p>
+                  </figure>
+                  <figure>
+                    <Image src={Bathroom} alt="Banheiros" width="22" height="22" />
+                    <p>{bathrooms}</p>
+                  </figure>
+                  <figure>
+                    <Image src={Car} alt="Garagens" width="22" height="22" />
+                    <p>{garages}</p>
+                  </figure>
+                </div>
               </Location>
 
               <CarousselStyle>
@@ -127,7 +153,7 @@ const Property = () => {
                       asNavFor={nav1}
                       ref={(slider2: any) => setNav2(slider2)}
                       swipeToSlide={true}
-                      slidesToShow={4}
+                      slidesToShow={5}
                       focusOnSelect={true}
                       arrows={false}
                     >
@@ -157,6 +183,12 @@ const Property = () => {
                   </form>
                 </StickyElement>
               </CarousselStyle>
+
+              <OverviewContainer>
+                  <h3>Descrição</h3>
+                  <div />
+                  <p>{description}</p>
+              </OverviewContainer>
             </PropertyInfo>
           )
         )}

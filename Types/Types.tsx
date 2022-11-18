@@ -9,4 +9,5 @@ export type PropertiesType = {
   city: string;
   propertieType: string;
   forRent: boolean;
+  description: string;
 };

@@ -28,6 +28,7 @@ export const AllProperties = [
     address: "2436 SW 8th St, Miami, FL 33135",
     propertieType: "Apartamento",
     forRent: true,
+    description: "Lindo apartamento com vista para o mar",
   },
   {
     mainImage: Casa2,
@@ -41,6 +42,7 @@ export const AllProperties = [
     address: "2436 SW 8th St, Miami, FL 33135",
     propertieType: "Apartamento",
     forRent: true,
+    description: "Lindo apartamento com vista para o mar",
   },
   {
     mainImage: Casa3,
@@ -54,6 +56,7 @@ export const AllProperties = [
     address: "2436 SW 8th St, Miami, FL 33135",
     propertieType: "Apartamento",
     forRent: false,
+    description: "Lindo apartamento com vista para o mar",
   },
   {
     mainImage: Casa4,
@@ -67,6 +70,7 @@ export const AllProperties = [
     address: "2436 SW 8th St, Miami, FL 33135",
     propertieType: "Apartamento",
     forRent: false,
+    description: "Lindo apartamento com vista para o mar",
   },
   {
     mainImage: Casa5,
@@ -80,6 +84,7 @@ export const AllProperties = [
     address: "2436 SW 8th St, Miami, FL 33135",
     propertieType: "Apartamento",
     forRent: false,
+    description: "Lindo apartamento com vista para o mar",
   },
   {
     mainImage: Casa6,
@@ -93,6 +98,7 @@ export const AllProperties = [
     address: "2436 SW 8th St, Miami, FL 33135",
     propertieType: "Apartamento",
     forRent: false,
+    description: "Lindo apartamento com vista para o mar",
   },
   {
     mainImage: Casa7,
@@ -106,6 +112,7 @@ export const AllProperties = [
     address: "2436 SW 8th St, Miami, FL 33135",
     propertieType: "Apartamento",
     forRent: false,
+    description: "Lindo apartamento com vista para o mar",
   },
   {
     mainImage: Ap1,
@@ -119,6 +126,7 @@ export const AllProperties = [
     address: "2436 SW 8th St, Miami, FL 33135",
     propertieType: "Casa",
     forRent: false,
+    description: "Lindo apartamento com vista para o mar",
   },
   {
     mainImage: Ap2,
@@ -132,5 +140,6 @@ export const AllProperties = [
     address: "2436 SW 8th St, Miami, FL 33135",
     propertieType: "Casa",
     forRent: false,
+    description: "Lindo apartamento com vista para o mar",
   },
 ];

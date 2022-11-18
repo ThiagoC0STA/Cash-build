@@ -8,7 +8,7 @@ export const Recent = styled.section`
   margin-top: 150px;
   width: 100%;
 
-  p {
+  .subtitle {
     margin: 24px 0 45px 0;
   }
 `;
@@ -31,6 +31,14 @@ export const Card = styled.div`
     cursor: pointer;
   }
 
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 16px;
+    margin-left: 25px;
+  }
+
   h3 {
     font-weight: 500;
     font-size: 21.4141px;
@@ -45,8 +53,6 @@ export const Card = styled.div`
     font-size: 20px;
     line-height: 28px;
     color: #4a60a1;
-    margin-top: 16px;
-    margin-left: 25px;
   }
 `;
 

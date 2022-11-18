@@ -24,7 +24,7 @@ export const AboutSection = styled.section`
 `;
 
 export const PropertyInfo = styled.div`
-  margin: 10vh 10vw;
+  margin: 7vh 10vw;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -97,14 +97,37 @@ export const StateProperty = styled.div`
 export const Location = styled.div`
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 6px;
+  justify-content: space-between;
   margin: 5px 0 30px 0;
+  width: 52.5vw;
 
   p {
     font-size: 15px;
     color: #636363;
     font-weight: normal;
+  }
+
+  div,
+  figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  figure {
+    gap: 0.3em;
+  }
+
+  div:first-child {
+    gap: 6px;
+  }
+
+  div:last-child {
+    gap: 1.2em;
+
+    p {
+      font-weight: bold;
+    }
   }
 `;
 
@@ -117,10 +140,7 @@ export const CarousselStyle = styled.div`
 `;
 
 export const Items = styled.div`
-  width: 800px;
-  height: 700px;
-  padding: 20px;
-  margin-left: -17px;
+  width: 52.5vw;
 
   img {
     object-fit: cover;
@@ -147,21 +167,24 @@ export const Items = styled.div`
 
 export const Item1 = styled.div`
   img {
-    width: 800px;
-    height: 500px;
+    width: 52.5vw;
+    height: 61.7vh;
+    object-fit: cover;
   }
 `;
 
 export const Item2 = styled.div`
   img {
-    width: 190px;
-    height: 120px;
+    width: 10.5vw;
+    height: 13.5vh;
+    object-fit: cover;
   }
 `;
 
 export const StickyElement = styled.aside`
-  height: 200vh;
-  margin-top: 20px;
+  height: 100%;
+  position: absolute;
+  right: 10vw;
 
   form {
     display: flex;
@@ -242,5 +265,31 @@ export const StickyElement = styled.aside`
         }
       }
     }
+  }
+`;
+
+export const OverviewContainer = styled.div`
+  width: 52.5vw;
+  min-height: 25vh;
+  margin-top: 30px;
+  margin-bottom: 130px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: start;
+
+  background: #fff;
+  box-shadow: 0 0 5px rgba(59, 76, 129, 0.1);
+  border-radius: 6.5px;
+  border: 1px solid rgb(221, 221, 221);
+
+  div {
+    width: 47.5vw;
+    height: 1px;
+    background: rgb(210, 210, 210);
+    position: absolute;
+    margin-top: 70px;
   }
 `;

@@ -67,12 +67,17 @@ const PropertiesComponent = () => {
                     style={{ cursor: "pointer" }}
                   />
                   <h3>{name}</h3>
-                  <h4>
-                    {price.toLocaleString("pt-BR", {
-                      style: "currency",
-                      currency: "BRL",
-                    })}
-                  </h4>
+
+                  <div className="price">
+                    <h4>
+                      {price.toLocaleString("pt-BR", {
+                        style: "currency",
+                        currency: "BRL",
+                      })}
+                    </h4>
+
+                    {forRent && <p>/mês</p>}
+                  </div>
 
                   <Info>
                     <div>
