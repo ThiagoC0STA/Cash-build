@@ -5,70 +5,39 @@ export const FormComponent = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px 0 141px 0;
+  margin: 50px 0 101px 0;
 `;
 
 export const MainDiv = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding: 0 4vw;
 
-  div:first-child {
-    background-color: #3b4c7e;
-    width: 40vw;
+  div {
     border-radius: 20px;
-    height: 70vh;
     display: flex;
+    width: 70vw;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 60px;
+
+    padding: 50px 15px;
+    background: #fff;
+    box-shadow: 0 0 5px rgb(59 76 129 / 10%);
+    border-radius: 6.5px;
+    border: 1px solid rgb(221, 221, 221);
   }
 
   h2 {
-    color: #fff;
-  }
-
-  div:last-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    background-color: #7c8fc7;
-    width: 40vw;
-    border-radius: 20px;
-    height: 70vh;
-
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    a {
-      width: 58px;
-      height: 58px;
-      background: #fff;
-      border-radius: 4px;
-      border: none;
-      transition: all ease 0.4s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      :hover {
-        background: #e7e9f4;
-      }
-    }
+    font-weight: bold;
   }
 
   form {
-    width: 35vw;
-    height: 32vh;
+    width: 100%;
+    min-height: 20vh;
     gap: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -76,11 +45,12 @@ export const MainDiv = styled.div`
     justify-content: center;
 
     input:nth-child(5) {
-      width: 31vw;
+      width: 850px;
     }
 
     button {
-      padding: 10px 50px;
+      padding: 0 50px;
+      height: 43px;
       color: #fff;
       background-color: #4970e6ca;
       border: none;
@@ -95,8 +65,8 @@ export const MainDiv = styled.div`
   }
 
   input {
-    width: 15vw;
-    height: 5vh;
+    width: 240px;
+    height: 43px;
     font-size: 15px;
     border-radius: 10px;
     border: none;

@@ -18,8 +18,8 @@
 [x] Fazer a pagina para mostrar apenas uma propriedade (design: https://www.darrelestate.com/property/modern-apartment-on-the-bay/).
 [x] fazer a função: {forRent && <h3>/mes</h3>} nos cards.
 [x] Fazer os filtros funcionarem.
+[x] Fazer a função "not found", para quando todos os filtros retornarem false.
 
-[] Fazer a função "not found", para quando todos os filtros retornarem false.
 [] Implementar a função de enviar o form para o email para entrar em contato sobre o imóvel selecionado.
 [] Colocar as setas no caroussel da propertyes
 [] Fazer o botão de compartilhar
