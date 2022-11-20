@@ -7,8 +7,14 @@ export const Contexts = createContext<any | null>(null);
 
 export const GlobalContext = ({ children }: any) => {
   const [mainItems, setMainItems] = useState<PropertiesType[]>(AllProperties);
+
   const [currentHeader, setCurrentHeader] = useState<string>("whiteHeader");
   const [current, setCurrent] = useState<string>("");
+
+  const [citySelected, setCitySelected] = useState<string>("Todas as cidades");
+  const [typeSelected, setTypeSelected] = useState<any>("Todos os tipos");
+
+  const [cities, setCities] = useState<string[]>([]);
 
   const location = useRouter();
 
@@ -41,9 +47,34 @@ export const GlobalContext = ({ children }: any) => {
     }
   }, [location]);
 
+  useEffect(() => {
+    var citiesSet = new Set();
+    var finalArray: any[] = [];
+
+    mainItems.map((item: any) => {
+      return citiesSet.add(item.city);
+    });
+
+    citiesSet.forEach((item: any) => {
+      finalArray.push(item);
+    });
+
+    setCities(finalArray);
+  }, [mainItems]);
+
   return (
     <Contexts.Provider
-      value={{ mainItems, setMainItems, currentHeader, current }}
+      value={{
+        mainItems,
+        setMainItems,
+        currentHeader,
+        current,
+        citySelected,
+        typeSelected,
+        setCitySelected,
+        setTypeSelected,
+        cities,
+      }}
     >
       {children}
     </Contexts.Provider>

@@ -15,12 +15,13 @@
 [x] Fazer o design da página de contato.
 [x] Fazer a página de contato.
 [x] Fazer a rota dinamica para cada propriedade.
-[x] Fazer a pagina para mostrar apenas uma propriedade (design: https://www.darrelestate.com/property/modern-apartment-on-the-bay/)
-[x] fazer a função: {forRent && <h3>/mes</h3>} nos cards
+[x] Fazer a pagina para mostrar apenas uma propriedade (design: https://www.darrelestate.com/property/modern-apartment-on-the-bay/).
+[x] fazer a função: {forRent && <h3>/mes</h3>} nos cards.
+[x] Fazer os filtros funcionarem.
 
-[] Fazer os filtros funcionarem.
-
+[] fazer a função "not found", para quando todos os filtros retornarem false.
 [] Implementar a função de enviar o form para o email para entrar em contato sobre o imóvel selecionado.
+[] Colocar as setas no caroussel da propertyes
 [] Fazer a versão para o mobile.
 [] Deixar o desempenho o melhor possivel.
 [] Colocar o site no ar.

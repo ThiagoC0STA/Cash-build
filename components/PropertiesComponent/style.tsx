@@ -15,6 +15,15 @@ export const Filters = styled.div`
   justify-content: space-between;
   width: 80vw;
 
+  p,
+  img {
+    cursor: pointer;
+  }
+
+  .selected {
+    font-weight: bold;
+  }
+
   div {
     display: flex;
     align-items: center;
@@ -22,6 +31,10 @@ export const Filters = styled.div`
 
   div:first-child {
     gap: 10px;
+    
+    select {
+      width: 150px;
+    }
   }
 
   div:last-child {
@@ -31,8 +44,10 @@ export const Filters = styled.div`
 
 export const Carousel = styled.div`
   width: 100%;
+  transition: all ease 0.4s;
 `;
 
 export const Cards = styled.div`
   margin-top: 25px;
-`
+`;
+

@@ -89,7 +89,7 @@ export const StateProperty = styled.div`
     font-size: 13px;
     padding: 7px 10px 6px;
     color: #fff;
-    background-color: #28a745;
+    background-color: #00a325;
     border-radius: 4px;
   }
 `;
@@ -222,7 +222,7 @@ export const StickyElement = styled.aside`
     textarea {
       resize: vertical;
       font-family: "Public Sans", sans-serif;
-      height: 80px;
+      height: 130px;
     }
 
     div {

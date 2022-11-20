@@ -70,7 +70,7 @@ const Property = () => {
               bedrooms,
               city,
               address,
-              description
+              description,
             }: any,
             index: any
           ) => (
@@ -117,7 +117,12 @@ const Property = () => {
                     <p>{bedrooms}</p>
                   </figure>
                   <figure>
-                    <Image src={Bathroom} alt="Banheiros" width="22" height="22" />
+                    <Image
+                      src={Bathroom}
+                      alt="Banheiros"
+                      width="22"
+                      height="22"
+                    />
                     <p>{bathrooms}</p>
                   </figure>
                   <figure>
@@ -185,9 +190,9 @@ const Property = () => {
               </CarousselStyle>
 
               <OverviewContainer>
-                  <h3>Descrição</h3>
-                  <div />
-                  <p>{description}</p>
+                <h3>Descrição</h3>
+                <div />
+                <p>{description}</p>
               </OverviewContainer>
             </PropertyInfo>
           )

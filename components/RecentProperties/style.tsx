@@ -25,7 +25,7 @@ export const Card = styled.div`
 
   img {
     width: 100%;
-    height: 240px;
+    max-height: 240px;
     object-fit: cover;
     border-radius: 6.5px 6.5px 0px 0px;
     cursor: pointer;
@@ -37,6 +37,10 @@ export const Card = styled.div`
     justify-content: start;
     margin-top: 16px;
     margin-left: 25px;
+
+    p {
+      font-size: 13px;
+    }
   }
 
   h3 {
@@ -71,7 +75,7 @@ export const Info = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 35px;
-  margin: 1.97vh 1.56vh 0 1.56vh;
+  margin: 1.97vh 25px 0 25px;
 
   div {
     img {
@@ -91,7 +95,6 @@ export const Info = styled.div`
     align-items: center;
     justify-content: start;
     gap: 24px;
-    margin-left: 11px;
   }
 
   div:last-child {
@@ -133,10 +136,17 @@ export const BlueDiv = styled.div`
   font-size: 14.9515px;
   line-height: 23px;
   color: #ffffff;
-  background: #4a60a1;
   border-radius: 4px;
   padding: 4.27184px 12.8155px;
   position: absolute;
   z-index: 1;
   margin: 7px;
+
+  .blue {
+    background-color: #4a60a1;
+  }
+
+  .green {
+    background-color: #00a325;
+  }
 `;

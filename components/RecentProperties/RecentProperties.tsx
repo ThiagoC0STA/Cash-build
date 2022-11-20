@@ -49,7 +49,15 @@ const RecentProperties = () => {
               ) => (
                 <div key={index}>
                   <Card>
-                    <BlueDiv>{forRent ? "Para Alugar" : "Para Vender"}</BlueDiv>
+                    <BlueDiv
+                      style={
+                        forRent
+                          ? { background: "#4a60a1" }
+                          : { background: "#00a325" }
+                      }
+                    >
+                      {forRent ? "Para Alugar" : "Para Comprar"}
+                    </BlueDiv>
                     <Image
                       onClick={() => router.push(`/property/${index}`)}
                       src={mainImage}
@@ -67,7 +75,7 @@ const RecentProperties = () => {
 
                       {forRent && <p>/mês</p>}
                     </div>
-                    
+
                     <Info>
                       <div>
                         <figure>
