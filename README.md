@@ -20,7 +20,7 @@
 [x] Fazer os filtros funcionarem.
 [x] Fazer a função "not found", para quando todos os filtros retornarem false.
 
-[] Implementar a função de enviar o form para o email para entrar em contato sobre o imóvel selecionado.
+[] Implementar a função de enviar o form para o email para entrar em contato sobre o imóvel selecionado (https://www.youtube.com/watch?v=Zbg1BHOVzRg 3:12 min)
 [] Colocar as setas no caroussel da propertyes
 [] Fazer o botão de compartilhar
 

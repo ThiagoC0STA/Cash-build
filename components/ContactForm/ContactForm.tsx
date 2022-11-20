@@ -1,7 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
-import { Facebook, Instagram, Linkedin } from "../E__export";
 import { FormComponent, MainDiv } from "./style";
 
 const ContactForm = () => {
@@ -15,6 +12,8 @@ const ContactForm = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
+
+
     setSubmited(true);
   };
 

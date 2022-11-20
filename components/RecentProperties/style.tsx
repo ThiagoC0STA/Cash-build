@@ -21,7 +21,7 @@ export const Card = styled.div`
   margin-top: 25px;
   box-shadow: 0 0 10px rgba(59, 77, 129, 0.08);
   border-radius: 6.5px;
-  border: 2px solid rgb(242, 242, 242);
+  border: 1px solid rgb(221, 221, 221);
 
   img {
     width: 100%;
