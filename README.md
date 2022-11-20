@@ -19,9 +19,11 @@
 [x] fazer a função: {forRent && <h3>/mes</h3>} nos cards.
 [x] Fazer os filtros funcionarem.
 
-[] fazer a função "not found", para quando todos os filtros retornarem false.
+[] Fazer a função "not found", para quando todos os filtros retornarem false.
 [] Implementar a função de enviar o form para o email para entrar em contato sobre o imóvel selecionado.
 [] Colocar as setas no caroussel da propertyes
+[] Fazer o botão de compartilhar
+
 [] Fazer a versão para o mobile.
 [] Deixar o desempenho o melhor possivel.
 [] Colocar o site no ar.

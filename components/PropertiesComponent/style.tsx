@@ -14,6 +14,10 @@ export const Filters = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 80vw;
+  margin-left: -15px;
+  background: #f0f0f0;
+  padding: 20px 20px;
+  border-radius: 6px;
 
   p,
   img {
@@ -29,12 +33,21 @@ export const Filters = styled.div`
     align-items: center;
   }
 
-  div:first-child {
-    gap: 10px;
-    
-    select {
-      width: 150px;
+  select {
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(106, 106, 106);
+    margin-left: -4px;
+    background: transparent;
+
+    :focus {
+      outline: 0;
     }
+  }
+
+  div:first-child {
+    gap: 50px;
   }
 
   div:last-child {
@@ -51,3 +64,6 @@ export const Cards = styled.div`
   margin-top: 25px;
 `;
 
+export const NotFound = styled.div`
+  margin: 100px 5px;
+`;

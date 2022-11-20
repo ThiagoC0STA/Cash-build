@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useContext, useEffect, useState } from "react";
 import { Contexts } from "../../contexts/GlobalContext";
 import { FilterIcon } from "../E__export";
-import { Cards, Carousel, Filters, PropertiesSection } from "./style";
+import { Cards, Carousel, Filters, NotFound, PropertiesSection } from "./style";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,9 +21,10 @@ const PropertiesComponent = () => {
     cities,
   } = useContext(Contexts);
   const [itemsCopy, setItemsCopy] = useState<PropertiesType[]>(mainItems);
+
   const [current, setCurrent] = useState<string>("all");
 
-  const [notFound, setNotFound] = useState<boolean>(false);
+  const [filteredArray, setFilteredArray] = useState<PropertiesType[]>([]);
 
   useEffect(() => {
     const citySelec: any = document.getElementById("citySelec");
@@ -32,6 +33,30 @@ const PropertiesComponent = () => {
     citySelec.value = citySelected;
     typeSelec.value = typeSelected;
   }, [citySelected, typeSelected]);
+
+  useEffect(() => {
+    const filtered = itemsCopy
+      .filter(({ city }: any) => {
+        if (citySelected === city) {
+          return true;
+        } else if (citySelected === "Todas as cidades") {
+          return true;
+        } else {
+          return false;
+        }
+      })
+      .filter(({ propertieType }: any) => {
+        if (typeSelected === propertieType) {
+          return true;
+        } else if (typeSelected === "Todos os tipos") {
+          return true;
+        } else {
+          return false;
+        }
+      });
+
+    setFilteredArray(filtered);
+  }, [citySelected, itemsCopy, typeSelected]);
 
   const router = useRouter();
 
@@ -111,30 +136,12 @@ const PropertiesComponent = () => {
         </div>
       </Filters>
 
-      {notFound ? <p>teste</p> : <div />}
-
       <Carousel>
         <Slider {...settings}>
-          {itemsCopy
-            .filter(({ city }: any) => {
-              if (citySelected === city) {
-                return true;
-              } else if (citySelected === "Todas as cidades") {
-                return true;
-              } else {
-                return false;
-              }
-            })
-            .filter(({ propertieType }: any) => {
-              if (typeSelected === propertieType) {
-                return true;
-              } else if (typeSelected === "Todos os tipos") {
-                return true;
-              } else {
-                return false;
-              }
-            })
-            .map(
+          {filteredArray.length === 0 ? (
+            <NotFound>Nenhum resultado encontrado</NotFound>
+          ) : (
+            filteredArray.map(
               (
                 {
                   name,
@@ -145,9 +152,9 @@ const PropertiesComponent = () => {
                   bathrooms,
                   bedrooms,
                   city,
-                }: any,
+                }: PropertiesType,
                 index: React.Key | null | undefined
-              ) => (
+              ): JSX.Element => (
                 <Cards key={index}>
                   <Card>
                     <BlueDiv
@@ -217,7 +224,8 @@ const PropertiesComponent = () => {
                   </Card>
                 </Cards>
               )
-            )}
+            )
+          )}
         </Slider>
       </Carousel>
     </PropertiesSection>
