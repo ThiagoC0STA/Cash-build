@@ -1,8 +1,15 @@
 import Image from "next/image";
 import React, { useContext, useEffect, useState } from "react";
 import { Contexts } from "../../contexts/GlobalContext";
-import { FilterIcon } from "../E__export";
-import { Cards, Carousel, Filters, NotFound, PropertiesSection } from "./style";
+import { CloseIcon, FilterIcon } from "../E__export";
+import {
+  Cards,
+  Carousel,
+  Filters,
+  NotFound,
+  PropertiesSection,
+  ShareDiv,
+} from "./style";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,6 +30,11 @@ const PropertiesComponent = () => {
   const [itemsCopy, setItemsCopy] = useState<PropertiesType[]>(mainItems);
 
   const [current, setCurrent] = useState<string>("all");
+
+  const initialLink = "cashbuild.com.br";
+  const [shareLink, setShareLink] = useState<string>("");
+
+  const [modal, setModal] = useState<boolean>();
 
   const [filteredArray, setFilteredArray] = useState<PropertiesType[]>([]);
 
@@ -88,6 +100,11 @@ const PropertiesComponent = () => {
         setCurrent("rent");
         break;
     }
+  };
+
+  const handleShare = (index: any) => {
+    setModal(true);
+    setShareLink(`${initialLink}/property/${index}`);
   };
 
   return (
@@ -216,7 +233,10 @@ const PropertiesComponent = () => {
 
                       <div>
                         <h5>{city}</h5>
-                        <button tabIndex={-1}>
+                        <button
+                          tabIndex={-1}
+                          onClick={() => handleShare(index)}
+                        >
                           <Image src={Share} alt="Compartilhar" />
                         </button>
                       </div>
@@ -228,6 +248,22 @@ const PropertiesComponent = () => {
           )}
         </Slider>
       </Carousel>
+
+      {modal && (
+        <ShareDiv>
+          <div>
+            <figure>
+              <Image
+                src={CloseIcon}
+                alt="Fechar"
+                onClick={() => setModal(false)}
+              />
+            </figure>
+            <h3>Copie o link e compartilhe essa propriedade!</h3>
+            <p>{shareLink}</p>
+          </div>
+        </ShareDiv>
+      )}
     </PropertiesSection>
   );
 };

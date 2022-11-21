@@ -1,12 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import { Card, Container, Info, Recent, BlueDiv } from "./style";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Contexts } from "../../contexts/GlobalContext";
-import { Bathroom, Bed, Car, Share } from "../E__export";
+import { Bathroom, Bed, Car, CloseIcon, Share } from "../E__export";
 import { useRouter } from "next/router";
+import { ShareDiv } from "../PropertiesComponent/style";
 
 const RecentProperties = () => {
   const settings = {
@@ -21,6 +22,16 @@ const RecentProperties = () => {
 
   const { mainItems } = useContext(Contexts);
   const router = useRouter();
+
+  const initialLink = "cashbuild.com.br";
+  const [shareLink, setShareLink] = useState<string>("");
+
+  const [modal, setModal] = useState<boolean>();
+
+  const handleShare = (index: any) => {
+    setModal(true);
+    setShareLink(`${initialLink}/property/${index}`);
+  };
 
   return (
     <Recent>
@@ -107,7 +118,11 @@ const RecentProperties = () => {
                       <div>
                         <h5>{city}</h5>
                         <button tabIndex={-1}>
-                          <Image src={Share} alt="Compartilhar" />
+                          <Image
+                            src={Share}
+                            alt="Compartilhar"
+                            onClick={() => handleShare(index)}
+                          />
                         </button>
                       </div>
                     </Info>
@@ -117,6 +132,21 @@ const RecentProperties = () => {
             )}
         </Slider>
       </Container>
+      {modal && (
+        <ShareDiv>
+          <div>
+            <figure>
+              <Image
+                src={CloseIcon}
+                alt="Fechar"
+                onClick={() => setModal(false)}
+              />
+            </figure>
+            <h3>Copie o link e compartilhe essa propriedade!</h3>
+            <p>{shareLink}</p>
+          </div>
+        </ShareDiv>
+      )}
     </Recent>
   );
 };

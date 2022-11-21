@@ -9,7 +9,6 @@ import {
   Car,
   LocationIcon,
   RightArrow,
-  Share,
 } from "../../components/E__export";
 import { Contexts } from "../../contexts/GlobalContext";
 import {
@@ -21,10 +20,12 @@ import {
   NameAndPrice,
   OverviewContainer,
   PropertyInfo,
-  ShareIcon,
   StateProperty,
   StickyElement,
+  WayDiv,
 } from "../../styles/pageStyle";
+
+import emailjs from "@emailjs/browser";
 
 const Property = () => {
   const { mainItems } = useContext(Contexts);
@@ -34,6 +35,42 @@ const Property = () => {
 
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
+
+  const [nameMail, setNameMail] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [propertyInterest, setPropertyInterest] = useState<string>("");
+
+  const [submited, setSubmited] = useState<boolean>(false);
+
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    const templateParams = {
+      from_name: nameMail,
+      message: message,
+      email: email,
+      phone: phone,
+      property_interest: propertyInterest,
+    };
+
+    emailjs
+      .send(
+        "service_63kzeqp",
+        "template_qahsll9",
+        templateParams,
+        "ewwPm_JZCFVjijLZT"
+      )
+      .then(() => {
+        setNameMail("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+        setPropertyInterest("");
+        setSubmited(true);
+      });
+  };
 
   const settings = {
     speed: 700,
@@ -75,17 +112,13 @@ const Property = () => {
             index: any
           ) => (
             <PropertyInfo key={index}>
-              <ShareIcon>
+              <WayDiv>
                 <nav>
                   <Link href="/">Home</Link>
                   <Image src={RightArrow} alt=">" />
                   <Link href="/properties">Propriedades</Link>
                 </nav>
-
-                <button>
-                  <Image src={Share} alt="compartilhar" />
-                </button>
-              </ShareIcon>
+              </WayDiv>
 
               <NameAndPrice>
                 <h2>{name}</h2>
@@ -176,15 +209,45 @@ const Property = () => {
                 </Items>
 
                 <StickyElement>
-                  <form action="">
-                    <input type="text" placeholder="Nome" />
-                    <input type="text" placeholder="Telefone" />
-                    <input type="text" placeholder="Email" />
-                    <textarea>{`Olá, estou interessado no ${name}`}</textarea>
+                  <form onSubmit={handleSubmit}>
+                    <input
+                      type="text"
+                      placeholder="Nome"
+                      value={nameMail}
+                      onChange={(e) => setNameMail(e.target.value)}
+                      required={true}
+                    />
+                    <input
+                      type="tel"
+                      placeholder="Telefone"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      required={true}
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required={true}
+                    />
+                    <textarea
+                      onChange={(e) => setMessage(e.target.value)}
+                      value={message}
+                      required={true}
+                      placeholder="mensagem"
+                    />
                     <div>
-                      <button>Enviar</button>
-                      <button>Ligar</button>
+                      <button
+                        type="submit"
+                        onClick={() => setPropertyInterest(`${name}`)}
+                      >
+                        Enviar
+                      </button>
                     </div>
+                    {submited === true && (
+                      <p style={{ color: "green" }}>Obrigado pelo contato!</p>
+                    )}
                   </form>
                 </StickyElement>
               </CarousselStyle>

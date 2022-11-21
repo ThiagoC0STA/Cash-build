@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FormComponent, MainDiv } from "./style";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [submited, setSubmited] = useState<boolean>(false);
@@ -13,8 +14,29 @@ const ContactForm = () => {
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+      phone: phone,
+      last_name: lastName,
+    };
 
-    setSubmited(true);
+    emailjs
+      .send(
+        "service_63kzeqp",
+        "template_ok27rl8",
+        templateParams,
+        "ewwPm_JZCFVjijLZT"
+      )
+      .then(() => {
+        setName("");
+        setLastName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+        setSubmited(true);
+      });
   };
 
   return (
@@ -60,7 +82,7 @@ const ContactForm = () => {
               value={message}
             />
             <button>Enviar</button>
-            {submited === true && <p>Obrigado pelo contato!</p>}
+            {submited === true && <p style={{color: "green"}}>Obrigado pelo contato!</p>}
           </form>
         </div>
       </MainDiv>

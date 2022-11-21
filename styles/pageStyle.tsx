@@ -30,7 +30,7 @@ export const PropertyInfo = styled.div`
   gap: 10px;
 `;
 
-export const ShareIcon = styled.div`
+export const WayDiv = styled.div`
   width: 100%;
   display: flex;
   align-items: center;

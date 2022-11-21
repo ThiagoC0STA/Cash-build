@@ -45,7 +45,7 @@ h2 {
 }
 
 .slick-dots li button:before {
-  font-size: 7px !important;
+  font-size: 7px;
 }
 
 ::-webkit-scrollbar {
