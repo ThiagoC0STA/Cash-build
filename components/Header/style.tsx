@@ -21,8 +21,14 @@ export const HeaderComponent = styled.header`
     font-weight: 600;
   }
 
+  div,
+  img {
+    z-index: 999;
+  }
+
   nav {
     display: flex;
+    align-items: center;
     gap: 48px;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -30,6 +36,29 @@ export const HeaderComponent = styled.header`
     font-size: 0.85rem;
     line-height: 22px;
     color: #ffffff;
-    z-index: 999;
+  }
+
+  .mobileNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #000d23;
+    box-shadow: 0 0 5px #000;
+    transition: all ease 0.4s;
+
+    nav {
+      flex-direction: column;
+      color: #fff !important;
+    }
+
+    img {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
   }
 `;

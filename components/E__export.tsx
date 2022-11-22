@@ -25,3 +25,6 @@ export { default as Instagram } from "/public/icons/instagram.svg";
 export { default as Linkedin } from "/public/icons/linkedin.svg";
 export { default as LocationIcon } from "/public/icons/location.svg";
 export { default as CloseIcon } from "/public/icons/close.svg";
+export { default as CloseWhiteIcon } from "/public/icons/close-white.svg";
+export { default as WhiteMenuIcon } from "/public/icons/white-menu.svg";
+export { default as BlackMenuIcon } from "/public/icons/black-menu.svg";

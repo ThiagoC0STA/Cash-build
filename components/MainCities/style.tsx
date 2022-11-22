@@ -5,7 +5,7 @@ export const CitiesSection = styled.section`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 18.5vh;
   width: 100%;
 
   p {
@@ -15,6 +15,14 @@ export const CitiesSection = styled.section`
   .container {
     width: 100%;
     padding: 0 15.2vw;
+  }
+
+  @media (max-width: 1000px) {
+    margin-top: 14vh;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 10vh;
   }
 `;
 

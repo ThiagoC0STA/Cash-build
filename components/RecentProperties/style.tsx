@@ -5,11 +5,19 @@ export const Recent = styled.section`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 18.5vh;
   width: 100%;
 
   .subtitle {
     margin: 24px 0 45px 0;
+  }
+
+  @media (max-width: 1000px) {
+    margin-top: 14vh;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 10vh;
   }
 `;
 

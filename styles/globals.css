@@ -68,3 +68,51 @@ h2 {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #222;
 }
+
+@media (max-width: 1000px) {
+  .subtitle {
+    font-size: 0.9rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  .subtitle {
+    font-size: 0.7rem;
+    width: 75%;
+    line-height: 22px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .subtitle {
+    font-size: 0.6rem;
+    width: 75%;
+    line-height: 22px;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 450px) {
+  .subtitle {
+    width: 80%;
+    line-height: 20px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}

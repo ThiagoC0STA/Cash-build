@@ -16,6 +16,9 @@ export const GlobalContext = ({ children }: any) => {
 
   const [cities, setCities] = useState<string[]>([]);
 
+  const [width, setWidth] = useState<number>(0);
+  const [mobile, setMobile] = useState<boolean>(false);
+
   const location = useRouter();
 
   useEffect(() => {
@@ -62,6 +65,21 @@ export const GlobalContext = ({ children }: any) => {
     setCities(finalArray);
   }, [mainItems]);
 
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    if (width < 1000) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [width]);
+
   return (
     <Contexts.Provider
       value={{
@@ -74,6 +92,7 @@ export const GlobalContext = ({ children }: any) => {
         setCitySelected,
         setTypeSelected,
         cities,
+        mobile,
       }}
     >
       {children}

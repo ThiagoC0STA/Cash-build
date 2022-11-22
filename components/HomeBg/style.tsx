@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 export const Background = styled.section`
   height: 85vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -89px;
+  margin-top: -92px;
+  z-index: 0;
 
   img {
     object-fit: cover;
@@ -19,7 +21,6 @@ export const Background = styled.section`
     justify-content: start;
     flex-direction: column;
     position: absolute;
-    z-index: 2;
     gap: 24px;
     margin-top: 50px;
   }
@@ -34,5 +35,33 @@ export const Background = styled.section`
 
   p {
     color: #fff;
+  }
+
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    height: 70vh;
+
+    h1 {
+      font-size: 2rem;
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    h1 {
+      font-size: 1.6rem;
+      text-align: center;
+    }
   }
 `;

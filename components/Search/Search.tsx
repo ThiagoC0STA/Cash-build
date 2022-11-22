@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useContext, useState } from "react";
 import { Contexts } from "../../contexts/GlobalContext";
-import { SearchComponent, WhiteDiv } from "./style";
+import { Container, SearchComponent, WhiteDiv } from "./style";
 
 const Search = () => {
   const { setCitySelected, setTypeSelected, cities } = useContext(Contexts);
@@ -20,30 +20,36 @@ const Search = () => {
   return (
     <SearchComponent>
       <WhiteDiv>
-        <div>
-          <label htmlFor="propertyLocation">Localização</label>
+        <Container>
+          <div>
+            <label htmlFor="propertyLocation">Localização</label>
 
-          <select id="propertyLocation">
-            <option value="Todas as cidades">Todas as cidades</option>
-            {cities.map((item: any, index: any) => (
-              <option key={index}>{item}</option>
-            ))}
-          </select>
-        </div>
+            <select id="propertyLocation">
+              <option value="Todas as cidades">Todas as cidades</option>
+              {cities.map((item: any, index: any) => (
+                <option key={index}>{item}</option>
+              ))}
+            </select>
+          </div>
+        </Container>
 
-        <div>
-          <label htmlFor="propertyType">Tipo da propriedade</label>
+        <Container className="line-before-content">
+          <div>
+            <label htmlFor="propertyType">Tipo da propriedade</label>
 
-          <select id="propertyType">
-            <option value="Todos os tipos">Todos os tipos</option>
-            <option value="Casa">Casa</option>
-            <option value="Apartamento">Apartamento</option>
-          </select>
-        </div>
+            <select id="propertyType">
+              <option value="Todos os tipos">Todos os tipos</option>
+              <option value="Casa">Casa</option>
+              <option value="Apartamento">Apartamento</option>
+            </select>
+          </div>
+        </Container>
 
-        <div>
-          <button onClick={() => handleClick()}>Pesquisar</button>
-        </div>
+        <Container className="line-before-content buttondiv">
+          <div>
+            <button onClick={() => handleClick()}>Pesquisar</button>
+          </div>
+        </Container>
       </WhiteDiv>
     </SearchComponent>
   );

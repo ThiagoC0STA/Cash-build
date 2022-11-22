@@ -8,6 +8,10 @@ export const SearchComponent = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 600px) {
+    margin-top: -5vh;
+  }
 `;
 
 export const WhiteDiv = styled.div`
@@ -16,16 +20,45 @@ export const WhiteDiv = styled.div`
   background: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0.93rem 2.5rem 0.06rem #6e80b431;
-  padding: 3.95vh 3.125vw;
+  padding: 3.95vh 0;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .line-before-content {
+    ::before {
+      content: "";
+      margin-left: -5vw;
+      position: absolute;
+      height: 10vh;
+      width: 1px;
+      background-color: #cfd3d6;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    width: 85vw;
+  }
+
+  @media (max-width: 1000px) {
+    width: 90vw;
+  }
+
+  @media (max-width: 600px) {
+    height: 10vh;
+  }
+`;
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   div {
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
-    gap: 1vw;
-    width: 17.125vw;
+    gap: 2vh;
 
     button {
       padding: 12px 24px;
@@ -36,7 +69,6 @@ export const WhiteDiv = styled.div`
       font-size: 1rem;
       line-height: 24px;
       color: #ffffff;
-      margin-left: 4vw;
     }
 
     label {
@@ -57,24 +89,25 @@ export const WhiteDiv = styled.div`
         outline: 0;
       }
     }
-  }
 
-  div:last-child {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-  }
+    @media (max-width: 1000px) {
+      button,
+      label,
+      select {
+        font-size: 0.8rem;
+      }
+    }
 
-  div:nth-child(2),
-  div:nth-child(3),
-  div:last-child {
-    ::before {
-      content: "";
-      height: 64px;
-      width: 1px;
-      margin-left: -2.5vw;
-      background-color: #cfd3d6;
-      position: absolute;
+    @media (max-width: 600px) {
+      button,
+      label,
+      select {
+        font-size: 0.6rem;
+      }
+
+      button {
+        padding: 6px 20px;
+      }
     }
   }
 `;

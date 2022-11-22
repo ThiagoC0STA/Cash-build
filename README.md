@@ -16,5 +16,6 @@
 [x] Fazer a página de contato
 [x] Fazer a rota dinamica para cada propriedade
 [x] Fazer a pagina para mostrar
+
 [] Fazer a versão para o mobile
 [] Colocar o site no ar.
