@@ -81,6 +81,14 @@ const PropertiesComponent = () => {
     slidesPerRow: 3,
     dots: true,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesPerRow: 2,
+        },
+      },
+    ],
   };
 
   const handleFilter = (state: string) => {
