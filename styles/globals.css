@@ -122,3 +122,13 @@ h2 {
     text-align: center;
   }
 }
+
+@media (max-width: 370px) {
+  .subtitle {
+    width: 78%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}

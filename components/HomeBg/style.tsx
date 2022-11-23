@@ -6,7 +6,7 @@ export const Background = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -100px;
+  margin-top: -130px;
   z-index: 0;
 
   img {

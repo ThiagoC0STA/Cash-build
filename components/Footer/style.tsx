@@ -4,14 +4,14 @@ export const FooterDiv = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 6.25vw;
 
   background: #f3f3f3;
   height: 120px;
 
   button {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     background: #edeff6;
     border-radius: 4px;
     border: none;
@@ -31,8 +31,67 @@ export const FooterDiv = styled.footer`
 
   p {
     font-weight: 300;
-    font-size: 19px;
+    font-size: 1.1rem;
     line-height: 32px;
     color: #000000;
+  }
+
+  @media (max-width: 730px) {
+    height: 80px;
+
+    p {
+      font-size: 0.7rem;
+    }
+
+    button {
+      width: 1.7rem;
+      height: 1.7rem;
+
+      img {
+        width: 0.7rem;
+        height: 0.7rem;
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+    padding: 0 4vw;
+    height: 70px;
+  }
+
+  @media (max-width: 400px) {    
+    height: 60px;
+
+    p {
+      font-size: 0.55rem;
+    }
+
+    button {
+      width: 1.65rem;
+      height: 1.65rem;
+
+      img {
+        width: 0.65rem;
+        height: 0.65rem;
+      }
+    }
+  }
+
+  @media (max-width: 330px) {    
+    height: 60px;
+
+    p {
+      font-size: 0.5rem;
+    }
+
+    button {
+      width: 1.6rem;
+      height: 1.6rem;
+
+      img {
+        width: 0.65rem;
+        height: 0.65rem;
+      }
+    }
   }
 `;

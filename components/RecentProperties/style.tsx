@@ -100,6 +100,7 @@ export const Card = styled.div`
   @media (max-width: 1400px) {
     width: 30vw;
     height: 500px;
+    margin: 0 0 10px 0.375vw;
   }
 
   @media (max-width: 1200px) {
@@ -285,6 +286,7 @@ export const ContainerCard = styled.div`
 
   @media (max-width: 950px) {
     padding: 0 4vw 0 7.5vw;
+    margin-bottom: 15vh;
   }
 
   @media (max-width: 800px) {
@@ -293,10 +295,15 @@ export const ContainerCard = styled.div`
 
   @media (max-width: 750px) {
     padding: 0 3vw 0 4.5vw;
+    margin-bottom: 10vh;
   }
 
   @media (max-width: 430px) {
     padding: 0 2vw 0 2vw;
+  }
+
+  @media (max-width: 430px) {
+    margin-bottom: 8vh;
   }
 `;
 

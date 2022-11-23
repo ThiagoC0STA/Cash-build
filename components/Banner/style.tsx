@@ -32,9 +32,75 @@ export const BannerElement = styled.section`
     line-height: 24px;
   }
 
+  p {
+    margin-top: 20px;
+  }
+
   h2,
   p,
   button {
     color: #fff;
+  }
+
+  @media (max-width: 1150px) {
+    height: 330px;
+
+    button {
+      font-size: 0.9rem;
+      padding: 8px 20px;
+    }
+
+    h2 {
+      font-size: 1.9em;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    height: 280px;
+  }
+
+  @media (max-width: 600px) {
+    height: 250px;
+
+    button {
+      font-size: 0.7rem;
+      padding: 4px 18px;
+    }
+
+    h2 {
+      font-size: 1.7em;
+    }
+  }
+
+  @media (max-width: 490px) {
+    height: 230px;
+
+    button {
+      font-size: 0.6rem;
+      padding: 2px 18px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 420px) {
+    height: 220px;
+
+    button {
+      font-size: 0.6rem;
+      padding: 0 15px;
+    }
+
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+
+  @media (max-width: 370px) {
+    h2 {
+      font-size: 1.15em;
+    }
   }
 `;
