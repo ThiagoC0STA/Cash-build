@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const PropertiesSection = styled.section`
-  padding: 70px 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 12.4vh;
 `;
 
 export const Filters = styled.div`
@@ -69,7 +68,7 @@ export const Carousel = styled.div`
 `;
 
 export const Cards = styled.div`
-  margin-top: 25px;
+ 
 `;
 
 export const NotFound = styled.div`

@@ -27,6 +27,10 @@ export const CitiesSection = styled.section`
     .slick-dots li button:before {
       font-size: 5px;
     }
+
+    .subtitle {
+      margin: 24px 0 0 0;
+    }
   }
 
   @media (max-width: 590px) {

@@ -18,6 +18,10 @@ export const Recent = styled.section`
 
   @media (max-width: 600px) {
     margin-top: 10vh;
+
+    .subtitle {
+      margin: 24px 0 30px 0;
+    }
   }
 
   @media (max-width: 440px) {
@@ -31,7 +35,7 @@ export const Card = styled.div`
   width: 25vw;
   height: 540px;
   background: #ffffff;
-  margin: 3.08vh 0 10px 0.375vw;
+  margin: 0 0 10px 0.375vw;
   box-shadow: 0 0 10px rgba(59, 77, 129, 0.08);
   border-radius: 6.5px;
   border: 1px solid rgb(221, 221, 221);
@@ -100,7 +104,6 @@ export const Card = styled.div`
   @media (max-width: 1400px) {
     width: 30vw;
     height: 500px;
-    margin: 0 0 10px 0.375vw;
   }
 
   @media (max-width: 1200px) {
