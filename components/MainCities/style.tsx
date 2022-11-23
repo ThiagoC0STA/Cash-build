@@ -23,6 +23,26 @@ export const CitiesSection = styled.section`
 
   @media (max-width: 600px) {
     margin-top: 10vh;
+
+    .slick-dots li button:before {
+      font-size: 5px;
+    }
+  }
+
+  @media (max-width: 590px) {
+    .container {
+      padding: 0 12vw;
+    }
+  }
+
+  @media (max-width: 440px) {
+    .container {
+      padding: 0 10.5vw;
+    }
+
+    .slick-dots li button:before {
+      font-size: 4px;
+    }
   }
 `;
 
@@ -48,20 +68,11 @@ export const Card = styled.div`
   h3 {
     position: absolute;
     z-index: 1;
-    margin: 24px 0 11px 24px;
+    margin: 3vw 0 11px 3vw;
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 32px;
     letter-spacing: 0.002em;
-  }
-
-  p {
-    position: absolute;
-    z-index: 1;
-    margin: 60px 0 0 24px;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 24px;
   }
 
   div {
@@ -74,5 +85,62 @@ export const Card = styled.div`
       rgba(59, 77, 129, 0.6) -12.86%,
       rgba(59, 77, 129, 0) 106.85%
     );
+  }
+
+  @media (max-width: 900px) {
+    width: 30vw;
+    height: 17vw;
+
+    div {
+      width: 30vw;
+      height: 17vw;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 720px) {
+    width: 34vw;
+    height: 20vw;
+
+    div {
+      width: 34vw;
+      height: 20vw;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 590px) {
+    width: 35vw;
+    height: 22vw;
+
+    div {
+      width: 35vw;
+      height: 22vw;
+    }
+
+    h3 {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    width: 37vw;
+    height: 24vw;
+    margin-top: -20px;
+
+    div {
+      width: 37vw;
+      height: 24vw;
+    }
+
+    h3 {
+      font-size: 0.7rem;
+    }
   }
 `;

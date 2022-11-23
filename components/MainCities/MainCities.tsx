@@ -10,14 +10,21 @@ const MainCities = () => {
   const settings = {
     speed: 700,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    rows: 2,
-    slidesPerRow: 3,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     dots: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   };
 
   return (
@@ -29,14 +36,11 @@ const MainCities = () => {
       </p>
       <div className="container">
         <Slider {...settings}>
-          {Cities.map(({ id, name, image, quantity }) => (
+          {Cities.map(({ id, name, image }) => (
             <CitiesDiv key={id}>
               <Card>
                 <div />
                 <h3>{name}</h3>
-                <p>
-                  {quantity} {quantity === 1 ? "propriedade" : "propriedades"}
-                </p>
                 <Image src={image} alt="Imagem da cidade" quality={100} />
               </Card>
             </CitiesDiv>

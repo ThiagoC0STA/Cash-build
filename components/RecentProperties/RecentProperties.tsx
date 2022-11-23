@@ -18,6 +18,15 @@ const RecentProperties = () => {
     dots: true,
     autoplay: true,
     autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   };
 
   const { mainItems } = useContext(Contexts);

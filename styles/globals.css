@@ -91,6 +91,7 @@ h2 {
 
   h2 {
     font-size: 1.5em;
+    line-height: 25px;
   }
 }
 
@@ -103,6 +104,10 @@ h2 {
 
   h2 {
     font-size: 1.3em;
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px;
   }
 }
 

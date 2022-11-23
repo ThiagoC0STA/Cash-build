@@ -16,11 +16,10 @@ export const SearchComponent = styled.section`
 
 export const WhiteDiv = styled.div`
   width: 55.3vw;
-  height: 15.8vh;
   background: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0.93rem 2.5rem 0.06rem #6e80b431;
-  padding: 3.95vh 0;
+  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -30,7 +29,7 @@ export const WhiteDiv = styled.div`
       content: "";
       margin-left: -5vw;
       position: absolute;
-      height: 10vh;
+      height: 8vh;
       width: 1px;
       background-color: #cfd3d6;
     }
@@ -46,6 +45,16 @@ export const WhiteDiv = styled.div`
 
   @media (max-width: 600px) {
     height: 10vh;
+
+    .line-before-content {
+      ::before {
+        height: 6vh;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    width: 95vw;
   }
 `;
 
@@ -58,7 +67,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 2vh;
+    gap: 17px;
 
     button {
       padding: 12px 24px;
@@ -91,6 +100,8 @@ export const Container = styled.div`
     }
 
     @media (max-width: 1000px) {
+      gap: 10px;
+
       button,
       label,
       select {
@@ -99,6 +110,8 @@ export const Container = styled.div`
     }
 
     @media (max-width: 600px) {
+      gap: 5px;
+
       button,
       label,
       select {
@@ -107,6 +120,16 @@ export const Container = styled.div`
 
       button {
         padding: 6px 20px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      gap: 2px;
+
+      button,
+      label,
+      select {
+        font-size: 0.5rem;
       }
     }
   }
