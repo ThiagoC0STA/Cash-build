@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
-import { Card, Container, Info, Recent, BlueDiv } from "./style";
+import { Card, ContainerCard, Info, Recent, BlueDiv } from "./style";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Contexts } from "../../contexts/GlobalContext";
@@ -49,7 +49,7 @@ const RecentProperties = () => {
         Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
         cubilia curae; Proin sodales ultrices nulla blandit volutpat.
       </p>
-      <Container>
+      <ContainerCard>
         <Slider {...settings}>
           {mainItems
             .slice(0, 6)
@@ -140,7 +140,7 @@ const RecentProperties = () => {
               )
             )}
         </Slider>
-      </Container>
+      </ContainerCard>
       {modal && (
         <ShareDiv>
           <div>
