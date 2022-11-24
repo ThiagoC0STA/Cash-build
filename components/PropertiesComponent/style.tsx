@@ -159,14 +159,23 @@ export const Filters = styled.div`
       gap: 6px;
     }
 
-    img {
-      width: 5px;
-      height: 5px;
+    select,
+    p {
+      font-size: 0.35rem;
+    }
+  }
+
+  @media (max-width: 290px) {
+    margin-bottom: 10px;
+
+    div:first-child,
+    div:last-child {
+      gap: 6px;
     }
 
     select,
     p {
-      font-size: 0.35rem;
+      font-size: 0.31rem;
     }
   }
 `;
