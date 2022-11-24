@@ -16,7 +16,9 @@ export const GlobalContext = ({ children }: any) => {
 
   const [cities, setCities] = useState<string[]>([]);
 
-  const [width, setWidth] = useState<number>(0);
+  const [width, setWidth] = useState(() => {
+    return typeof window !== "undefined" ? window.innerWidth : 0;
+  });
   const [mobile, setMobile] = useState<boolean>(false);
 
   const location = useRouter();
