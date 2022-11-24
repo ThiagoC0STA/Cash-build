@@ -335,6 +335,10 @@ export const Location = styled.div`
       width: 11px;
       height: 11px;
     }
+
+    div:last-child {
+      gap: 0.8em;
+    }
   }
 `;
 
