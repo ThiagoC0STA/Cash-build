@@ -144,7 +144,7 @@ const PropertiesComponent = () => {
             className={current === "all" ? "selected" : ""}
             onClick={() => handleFilter("all")}
           >
-            Comprar e Alugar 
+            Comprar e Alugar
           </p>
           <p
             className={current === "buy" ? "selected" : ""}

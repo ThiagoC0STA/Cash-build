@@ -121,7 +121,7 @@ export const Filters = styled.div`
 
     div:first-child,
     div:last-child {
-      gap: 15px;
+      gap: 20px;
     }
 
     select,
@@ -133,11 +133,6 @@ export const Filters = styled.div`
   @media (max-width: 440px) {
     padding: 10px 10px;
     margin-bottom: 20px;
-
-    div:first-child,
-    div:last-child {
-      gap: 8px;
-    }
 
     img {
       width: 5px;
@@ -151,12 +146,12 @@ export const Filters = styled.div`
   }
 
   @media (max-width: 350px) {
-    padding: 7px 7px;
+    padding: 7px 10px;
     margin-bottom: 15px;
 
     div:first-child,
     div:last-child {
-      gap: 6px;
+      gap: 10px;
     }
 
     select,
@@ -167,11 +162,6 @@ export const Filters = styled.div`
 
   @media (max-width: 290px) {
     margin-bottom: 10px;
-
-    div:first-child,
-    div:last-child {
-      gap: 6px;
-    }
 
     select,
     p {
