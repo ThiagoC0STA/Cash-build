@@ -50,7 +50,7 @@ const Header = () => {
 
       <div
         className={mobile ? "mobileNav" : ""}
-        style={modal ? { right: "0" } : { right: "-50vw" }}
+        style={modal ? { right: "0" } : { right: "-55vw" }}
       >
         {mobile && (
           <Image
