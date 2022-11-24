@@ -69,7 +69,7 @@ export const GlobalContext = ({ children }: any) => {
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
 
-    if (width < 1000) {
+    if (width > 1000) {
       setMobile(true);
     } else {
       setMobile(false);
