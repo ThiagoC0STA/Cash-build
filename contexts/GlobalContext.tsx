@@ -11,7 +11,8 @@ export const GlobalContext = ({ children }: any) => {
   const [currentHeader, setCurrentHeader] = useState<string>("whiteHeader");
   const [current, setCurrent] = useState<string>("");
 
-  const [citySelected, setCitySelected] = useState<string>("Todas as cidades");
+  const [districtSelected, setDistrictSelected] =
+    useState<string>("Todos os bairros");
   const [typeSelected, setTypeSelected] = useState<any>("Todos os tipos");
 
   const [cities, setCities] = useState<string[]>([]);
@@ -57,7 +58,7 @@ export const GlobalContext = ({ children }: any) => {
     var finalArray: any[] = [];
 
     mainItems.map((item: any) => {
-      return citiesSet.add(item.city);
+      return citiesSet.add(item.district);
     });
 
     citiesSet.forEach((item: any) => {
@@ -89,9 +90,9 @@ export const GlobalContext = ({ children }: any) => {
         setMainItems,
         currentHeader,
         current,
-        citySelected,
+        districtSelected,
         typeSelected,
-        setCitySelected,
+        setDistrictSelected,
         setTypeSelected,
         cities,
         mobile,

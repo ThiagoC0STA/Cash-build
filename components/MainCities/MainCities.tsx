@@ -31,8 +31,7 @@ const MainCities = () => {
     <CitiesSection>
       <h2>Localizações de nossas propriedades</h2>
       <p className="subtitle">
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-        cubilia curae; Proin sodales ultrices nulla blandit volutpat.
+        Saiba em quais cidades temos imóveis incríveis esperando por você 
       </p>
       <div className="container">
         <Slider {...settings}>

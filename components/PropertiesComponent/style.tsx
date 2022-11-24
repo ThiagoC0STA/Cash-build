@@ -262,4 +262,59 @@ export const ShareDiv = styled.div`
       color: #0055b0;
     }
   }
+
+  @media (max-width: 600px) {
+    div {
+      min-width: 0;
+      width: 85vw;
+    }
+  }
+
+  @media (max-width: 500px) {
+    div {
+      p,
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+    div {
+      p,
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    div {
+      padding: 5px 0;
+      p,
+      h3 {
+        font-size: 0.7rem;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    @media (max-width: 350px) {
+      div {
+        padding: 5px 0;
+        p,
+        h3 {
+          font-size: 0.6rem;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
 `;

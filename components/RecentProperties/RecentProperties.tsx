@@ -46,8 +46,7 @@ const RecentProperties = () => {
     <Recent>
       <h2>Propriedades Recentes</h2>
       <p className="subtitle">
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-        cubilia curae; Proin sodales ultrices nulla blandit volutpat.
+        Fique de olho nas novidades que a CashBuild tem para você!
       </p>
       <ContainerCard>
         <Slider {...settings}>
@@ -63,7 +62,7 @@ const RecentProperties = () => {
                   garages,
                   bathrooms,
                   bedrooms,
-                  city,
+                  district,
                 }: any,
                 index: React.Key | null | undefined
               ) => (
@@ -125,7 +124,7 @@ const RecentProperties = () => {
                       </div>
 
                       <div>
-                        <h5>{city}</h5>
+                        <h5>{district}</h5>
                         <button tabIndex={-1}>
                           <Image
                             src={Share}

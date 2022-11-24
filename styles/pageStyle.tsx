@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const AboutSection = styled.section`
-  padding: 40px 10vw 100px 10vw;
+  padding: 40px 25vw 100px 25vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 48px;
 
   h2 {
     text-align: center;
@@ -29,6 +30,10 @@ export const AboutSection = styled.section`
     p {
       font-size: 0.9rem;
     }
+  }
+
+  @media (max-width: 750px) {
+    padding: 40px 10vw 100px 10vw;
   }
 
   @media (max-width: 550px) {

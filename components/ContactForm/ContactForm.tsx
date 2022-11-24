@@ -82,7 +82,9 @@ const ContactForm = () => {
               value={message}
             />
             <button>Enviar</button>
-            {submited === true && <p style={{color: "green"}}>Obrigado pelo contato!</p>}
+            {submited === true && (
+              <p style={{ color: "green" }}>Obrigado pelo contato!</p>
+            )}
           </form>
         </div>
       </MainDiv>

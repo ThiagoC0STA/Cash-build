@@ -6,7 +6,7 @@ export type PropertiesType = {
   garages: number;
   bathrooms: number;
   bedrooms: number;
-  city: string;
+  district: string;
   propertieType: string;
   forRent: boolean;
   description: string;

@@ -1,17 +1,17 @@
 import { useRouter } from "next/router";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Contexts } from "../../contexts/GlobalContext";
 import { Container, SearchComponent, WhiteDiv } from "./style";
 
 const Search = () => {
-  const { setCitySelected, setTypeSelected, cities } = useContext(Contexts);
+  const { setDistrictSelected, setTypeSelected, cities } = useContext(Contexts);
   const location = useRouter();
 
   const handleClick = async () => {
     const propertyLocation: any = document.getElementById("propertyLocation");
     const propertyType: any = document.getElementById("propertyType");
 
-    await setCitySelected(propertyLocation.value);
+    await setDistrictSelected(propertyLocation.value);
     await setTypeSelected(propertyType.value);
 
     location.push("/properties");
@@ -25,7 +25,7 @@ const Search = () => {
             <label htmlFor="propertyLocation">Localização</label>
 
             <select id="propertyLocation">
-              <option value="Todas as cidades">Todas as cidades</option>
+              <option value="Todos os bairros">Todos os bairros</option>
               {cities.map((item: any, index: any) => (
                 <option key={index}>{item}</option>
               ))}

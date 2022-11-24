@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useContext, useEffect, useState } from "react";
 import { Contexts } from "../../contexts/GlobalContext";
-import { CloseIcon, FilterIcon } from "../E__export";
+import { CloseIcon } from "../E__export";
 import {
   Cards,
   Carousel,
@@ -21,8 +21,8 @@ import { PropertiesType } from "../../Types/Types";
 const PropertiesComponent = () => {
   const {
     mainItems,
-    citySelected,
-    setCitySelected,
+    districtSelected,
+    setDistrictSelected,
     typeSelected,
     setTypeSelected,
     cities,
@@ -39,19 +39,19 @@ const PropertiesComponent = () => {
   const [filteredArray, setFilteredArray] = useState<PropertiesType[]>([]);
 
   useEffect(() => {
-    const citySelec: any = document.getElementById("citySelec");
+    const districtSelec: any = document.getElementById("districtSelec");
     const typeSelec: any = document.getElementById("typeSelec");
 
-    citySelec.value = citySelected;
+    districtSelec.value = districtSelected;
     typeSelec.value = typeSelected;
-  }, [citySelected, typeSelected]);
+  }, [districtSelected, typeSelected]);
 
   useEffect(() => {
     const filtered = itemsCopy
-      .filter(({ city }: any) => {
-        if (citySelected === city) {
+      .filter(({ district }: any) => {
+        if (districtSelected === district) {
           return true;
-        } else if (citySelected === "Todas as cidades") {
+        } else if (districtSelected === "Todos os bairros") {
           return true;
         } else {
           return false;
@@ -68,7 +68,7 @@ const PropertiesComponent = () => {
       });
 
     setFilteredArray(filtered);
-  }, [citySelected, itemsCopy, typeSelected]);
+  }, [districtSelected, itemsCopy, typeSelected]);
 
   const router = useRouter();
 
@@ -120,10 +120,10 @@ const PropertiesComponent = () => {
       <Filters>
         <div>
           <select
-            id="citySelec"
-            onChange={(e) => setCitySelected(e.target.value)}
+            id="districtSelec"
+            onChange={(e) => setDistrictSelected(e.target.value)}
           >
-            <option value="Todas as cidades">Todas as cidades</option>
+            <option value="Todos os bairros">Todas os bairros</option>
             {cities.map((item: any, index: any) => (
               <option key={index}>{item}</option>
             ))}
@@ -176,7 +176,7 @@ const PropertiesComponent = () => {
                   garages,
                   bathrooms,
                   bedrooms,
-                  city,
+                  district,
                 }: PropertiesType,
                 index: React.Key | null | undefined
               ): JSX.Element => (
@@ -240,7 +240,7 @@ const PropertiesComponent = () => {
                       </div>
 
                       <div>
-                        <h5>{city}</h5>
+                        <h5>{district}</h5>
                         <button
                           tabIndex={-1}
                           onClick={() => handleShare(index)}
