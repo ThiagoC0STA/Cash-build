@@ -144,19 +144,19 @@ const PropertiesComponent = () => {
             className={current === "all" ? "selected" : ""}
             onClick={() => handleFilter("all")}
           >
-            Todas as propriedades
+            Comprar e Alugar 
           </p>
           <p
             className={current === "buy" ? "selected" : ""}
             onClick={() => handleFilter("buy")}
           >
-            Para comprar
+            Comprar
           </p>
           <p
             className={current === "rent" ? "selected" : ""}
             onClick={() => handleFilter("rent")}
           >
-            Para alugar
+            Alugar
           </p>
         </div>
       </Filters>
