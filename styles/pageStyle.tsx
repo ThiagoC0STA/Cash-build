@@ -129,6 +129,7 @@ export const NameAndPrice = styled.div`
 
   h3 {
     font-size: 1.5rem;
+    color: #009b1a;
   }
 
   div {
@@ -191,7 +192,7 @@ export const NameAndPrice = styled.div`
     }
 
     h3 {
-      font-size: 0.55rem;
+      font-size: 0.6rem;
     }
   }
 `;
@@ -337,7 +338,7 @@ export const Location = styled.div`
     }
 
     div:last-child {
-      gap: 0.8em;
+      gap: 0.6em;
     }
   }
 `;
