@@ -9,6 +9,18 @@ export const Background = styled.section`
   margin-top: -130px;
   z-index: 0;
 
+  ::before {
+    content: "";
+    background: linear-gradient(
+      0deg,
+      rgba(6, 48, 83, 0.55),
+      rgba(6, 48, 83, 0.55)
+    );
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+  }
+
   img {
     object-fit: cover;
     width: 100%;

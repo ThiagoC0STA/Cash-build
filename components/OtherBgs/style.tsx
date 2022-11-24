@@ -4,6 +4,19 @@ export const Background = styled.div`
   width: 100%;
   height: 200px;
   margin-bottom: 50px;
+  
+  ::before {
+    content: "";
+    background: linear-gradient(
+      0deg,
+      rgba(6, 48, 83, 0.4),
+      rgba(6, 48, 83, 0.4)
+    );
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: 0;
+  }
 
   img {
     object-fit: cover;
@@ -19,7 +32,6 @@ export const Background = styled.div`
 `;
 
 export const Texts = styled.div`
-  z-index: 1;
   margin-top: -18vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +40,13 @@ export const Texts = styled.div`
 
   p {
     font-size: 1rem;
+    z-index: 10;
   }
 
   h2 {
     font-size: 2.8rem;
     color: #fff;
+    z-index: 10;
   }
 
   p,

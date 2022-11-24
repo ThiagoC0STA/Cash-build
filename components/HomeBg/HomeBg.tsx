@@ -6,7 +6,7 @@ import { Background } from "./style";
 const HomeBg = () => {
   return (
     <Background>
-      <Image alt="Casa de madeira" src={HomeBgImage} priority={true} />
+      <Image alt="Casa de madeira" src={HomeBgImage} priority={true} placeholder="blur" />
 
       <div>
         <h1>Encontre a sua casa dos sonhos</h1>
