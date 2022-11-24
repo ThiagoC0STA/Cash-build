@@ -95,6 +95,7 @@ export const GlobalContext = ({ children }: any) => {
         setTypeSelected,
         cities,
         mobile,
+        width,
       }}
     >
       {children}

@@ -17,6 +17,7 @@ import {
   Item2,
   Items,
   Location,
+  MobileForm,
   NameAndPrice,
   OverviewContainer,
   PropertyInfo,
@@ -28,7 +29,7 @@ import {
 import emailjs from "@emailjs/browser";
 
 const Property = () => {
-  const { mainItems } = useContext(Contexts);
+  const { mainItems, width } = useContext(Contexts);
   const router: any = useRouter();
   const parametro = router.query.id;
   const [currentdiv, setCurrentdiv] = useState<object[]>();
@@ -81,6 +82,45 @@ const Property = () => {
     slidesPerRow: 1,
     dots: false,
     arrows: true,
+  };
+
+  const settings2 = {
+    speed: 700,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    dots: false,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 7,
+        },
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+    ],
   };
 
   useEffect(() => {
@@ -187,11 +227,10 @@ const Property = () => {
 
                   <Item2>
                     <Slider
-                      {...settings}
+                      {...settings2}
                       asNavFor={nav1}
                       ref={(slider2: any) => setNav2(slider2)}
                       swipeToSlide={true}
-                      slidesToShow={5}
                       focusOnSelect={true}
                       arrows={false}
                     >
@@ -208,7 +247,60 @@ const Property = () => {
                   </Item2>
                 </Items>
 
-                <StickyElement>
+                {width >= 1300 && (
+                  <StickyElement>
+                    <form onSubmit={handleSubmit}>
+                      <input
+                        type="text"
+                        placeholder="Nome"
+                        value={nameMail}
+                        onChange={(e) => setNameMail(e.target.value)}
+                        required={true}
+                      />
+                      <input
+                        type="tel"
+                        placeholder="Telefone"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        required={true}
+                      />
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required={true}
+                      />
+                      <textarea
+                        onChange={(e) => setMessage(e.target.value)}
+                        value={message}
+                        required={true}
+                        placeholder="mensagem"
+                      />
+                      <div>
+                        <button
+                          type="submit"
+                          onClick={() => setPropertyInterest(`${name}`)}
+                        >
+                          Enviar
+                        </button>
+                      </div>
+                      {submited === true && (
+                        <p style={{ color: "green" }}>Obrigado pelo contato!</p>
+                      )}
+                    </form>
+                  </StickyElement>
+                )}
+              </CarousselStyle>
+
+              <OverviewContainer>
+                <h3>Descrição</h3>
+                <div />
+                <p>{description}</p>
+              </OverviewContainer>
+
+              {width < 1300 && (
+                <MobileForm>
                   <form onSubmit={handleSubmit}>
                     <input
                       type="text"
@@ -249,14 +341,8 @@ const Property = () => {
                       <p style={{ color: "green" }}>Obrigado pelo contato!</p>
                     )}
                   </form>
-                </StickyElement>
-              </CarousselStyle>
-
-              <OverviewContainer>
-                <h3>Descrição</h3>
-                <div />
-                <p>{description}</p>
-              </OverviewContainer>
+                </MobileForm>
+              )}
             </PropertyInfo>
           )
         )}
