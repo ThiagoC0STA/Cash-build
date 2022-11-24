@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const AboutSection = styled.section`
-  padding: 150px 10vw;
+  padding: 40px 10vw 100px 10vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   h2 {
-    text-align: start;
+    text-align: center;
     margin-bottom: 50px;
     font-weight: 600;
     font-size: 2.1rem;
@@ -15,11 +15,30 @@ export const AboutSection = styled.section`
   }
 
   p {
-    width: 650px;
     font-weight: 400;
     font-size: 1rem;
     line-height: 28px;
     margin-top: 30px;
+  }
+
+  @media (max-width: 1000px) {
+    h2 {
+      font-size: 1.9rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+    }
   }
 `;
 

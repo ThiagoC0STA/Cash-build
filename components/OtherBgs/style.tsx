@@ -12,7 +12,7 @@ export const Background = styled.div`
     z-index: 0;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     height: 150px;
     margin-bottom: 20px;
   }

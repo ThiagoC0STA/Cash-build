@@ -44,7 +44,7 @@ export const HeaderComponent = styled.header`
     justify-content: center;
     position: fixed;
     top: 0;
-    width: 50vw;
+    width: 55vw;
     height: 100vh;
     background-color: #000d23;
     box-shadow: 0 0 5px #000;

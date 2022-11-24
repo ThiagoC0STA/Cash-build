@@ -1,10 +1,13 @@
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import { Building } from "../components/E__export";
 import OtherBgs from "../components/OtherBgs/OtherBgs";
+import { Contexts } from "../contexts/GlobalContext";
 import { AboutSection } from "../styles/pageStyle";
 
 const About = () => {
+  const { width } = useContext(Contexts);
+
   return (
     <>
       <OtherBgs />
@@ -39,22 +42,6 @@ const About = () => {
             In metus vulputate eu scelerisque felis imperdiet. Volutpat est
             velit egestas dui id ornare.{" "}
           </p>
-          <p>
-            Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-            dictum. Semper auctor neque vitae tempus quam pellentesque. Risus
-            commodo viverra maecenas accumsan. Penatibus et magnis dis
-            parturient montes nascetur ridiculus mus. Leo vel orci porta non
-            pulvinar. Neque sodales ut etiam sit amet nisl purus in mollis.
-            Lectus quam id leo in vitae turpis massa. Aliquam id diam maecenas
-            ultricies mi. Lobortis scelerisque fermentum dui faucibus. Sagittis
-            orci a scelerisque purus. Orci sagittis eu volutpat odio facilisis.
-            Id consectetur purus ut faucibus. Posuere urna nec tincidunt
-            praesent semper feugiat nibh. Amet nisl purus in mollis nunc sed id
-            semper risus. Dui sapien eget mi proin sed.
-          </p>
-        </div>
-        <div>
-          <Image src={Building} alt="Prédios" />
         </div>
       </AboutSection>
     </>
