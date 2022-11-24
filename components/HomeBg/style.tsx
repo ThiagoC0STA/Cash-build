@@ -58,6 +58,10 @@ export const Background = styled.section`
   @media (max-width: 600px) {
     height: 70vh;
 
+    ::before {
+      height: 70vh;
+    }
+
     h1 {
       font-size: 2rem;
       line-height: 30px;

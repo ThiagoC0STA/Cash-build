@@ -4,7 +4,7 @@ export const Background = styled.div`
   width: 100%;
   height: 200px;
   margin-bottom: 50px;
-  
+
   ::before {
     content: "";
     background: linear-gradient(
@@ -28,6 +28,10 @@ export const Background = styled.div`
   @media (max-width: 550px) {
     height: 150px;
     margin-bottom: 20px;
+
+    ::before {
+      height: 150px;
+    }
   }
 `;
 
