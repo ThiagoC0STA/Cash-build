@@ -1,13 +1,8 @@
-import Image from "next/image";
-import React, { useContext } from "react";
-import { Building } from "../components/E__export";
+import React from "react";
 import OtherBgs from "../components/OtherBgs/OtherBgs";
-import { Contexts } from "../contexts/GlobalContext";
 import { AboutSection } from "../styles/pageStyle";
 
 const About = () => {
-  const { width } = useContext(Contexts);
-
   return (
     <>
       <OtherBgs />
