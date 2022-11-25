@@ -16,7 +16,7 @@ const HomeBg = () => {
       <div>
         <h1>Encontre a sua casa dos sonhos</h1>
         <p className="subtitle">
-          Aqui na CashBuild a gente tem os melhores imóveis com as melhores
+          Aqui na CashBuild nós temos os melhores imóveis com as melhores
           condições do mercado para você! Não perca tempo e viva do jeitinho que
           sempre quis.
         </p>
