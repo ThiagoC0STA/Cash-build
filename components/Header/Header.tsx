@@ -55,7 +55,7 @@ const Header = () => {
       >
         {mobile && (
           <Image
-          className="close"
+            className="close"
             onClick={() => setModal(!modal)}
             src={CloseWhiteIcon}
             alt="fechar"
@@ -68,31 +68,45 @@ const Header = () => {
               : { color: "#000" }
           }
         >
-          <Link className={current === "home" ? "selected" : ""} href="/">
+          <Link
+            className={current === "home" ? "selected" : ""}
+            href="/"
+            onClick={() => setModal(false)}
+          >
             HOME
           </Link>
 
           <Link
             className={current === "properties" ? "selected" : ""}
             href="/properties"
+            onClick={() => setModal(false)}
           >
             IMÓVEIS
           </Link>
 
-          <Link className={current === "about" ? "selected" : ""} href="/about">
+          <Link
+            className={current === "about" ? "selected" : ""}
+            href="/about"
+            onClick={() => setModal(false)}
+          >
             SOBRE NÓS
           </Link>
 
           <Link
             className={current === "contact" ? "selected" : ""}
             href="/contact"
+            onClick={() => setModal(false)}
           >
             CONTATO
           </Link>
 
-          <Link href="https://wa.me/554184024827" target="_blank">
+          <Link
+            href="https://wa.me/554184024827"
+            target="_blank"
+            onClick={() => setModal(false)}
+          >
             WhatsApp
-            <Image src={WhatsappIcon} alt="Whatsapp"/>
+            <Image src={WhatsappIcon} alt="Whatsapp" />
           </Link>
         </nav>
       </div>
