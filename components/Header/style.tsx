@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderComponent = styled.header`
   background: transparent;
-  margin: 3vh 10vw;
+  margin: 3vh 6vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,6 +36,18 @@ export const HeaderComponent = styled.header`
     font-size: 0.85rem;
     line-height: 22px;
     color: #ffffff;
+
+    a:last-child {
+      font-size: 0.9rem;
+      display: flex;
+      color: #ffffff;
+      gap: 10px;
+      align-items: center;
+      padding: 6px 12px;
+      background-color: #25d366;
+      border: none;
+      border-radius: 7px;
+    }
   }
 
   .mobileNav {
@@ -55,7 +67,7 @@ export const HeaderComponent = styled.header`
       color: #fff !important;
     }
 
-    img {
+    .close {
       position: absolute;
       top: 30px;
       right: 30px;

@@ -28,3 +28,4 @@ export { default as CloseIcon } from "/public/icons/close.svg";
 export { default as CloseWhiteIcon } from "/public/icons/close-white.svg";
 export { default as WhiteMenuIcon } from "/public/icons/white-menu.svg";
 export { default as BlackMenuIcon } from "/public/icons/black-menu.svg";
+export { default as WhatsappIcon } from "/public/icons/whatsapp.svg";

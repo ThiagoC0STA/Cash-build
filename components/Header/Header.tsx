@@ -6,6 +6,7 @@ import {
   BlackMenuIcon,
   BlueIcon,
   CloseWhiteIcon,
+  WhatsappIcon,
   WhiteIcon,
   WhiteMenuIcon,
 } from "../E__export";
@@ -54,6 +55,7 @@ const Header = () => {
       >
         {mobile && (
           <Image
+          className="close"
             onClick={() => setModal(!modal)}
             src={CloseWhiteIcon}
             alt="fechar"
@@ -74,7 +76,7 @@ const Header = () => {
             className={current === "properties" ? "selected" : ""}
             href="/properties"
           >
-            PROPRIEDADES
+            IMÓVEIS
           </Link>
 
           <Link className={current === "about" ? "selected" : ""} href="/about">
@@ -86,6 +88,11 @@ const Header = () => {
             href="/contact"
           >
             CONTATO
+          </Link>
+
+          <Link href="https://wa.me/554184024827" target="_blank">
+            WhatsApp
+            <Image src={WhatsappIcon} alt="Whatsapp"/>
           </Link>
         </nav>
       </div>

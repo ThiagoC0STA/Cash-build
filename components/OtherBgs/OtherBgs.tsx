@@ -17,7 +17,7 @@ const OtherBgs = () => {
         setPage("Sobre Nós");
         break;
       case "properties":
-        setPage("Propriedades");
+        setPage("Nossos imóveis");
         break;
       case "contact":
         setPage("Contato");

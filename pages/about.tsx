@@ -8,16 +8,23 @@ const About = () => {
       <OtherBgs />
       <AboutSection>
         <div>
-          <h2>Quem somos?</h2>
+          <h2>Empresa</h2>
           <p>
-            A CashBuild está há anos no ramo de imobiliária, e já conquistou a
-            confiança de dezenas de clientes por todo o estado. Negócios
-            intermediados pela CashBuild são garantia de segurança, bom
-            atendimento e de um ótimo negócio. Você quer comprar ou vender?
-            Procure-nos! Estamos prontos a proporcionar condições para que você
-            feche negócio. Contamos com um time de consultores imobiliários
-            experientes, uma excelente assessoria e acompanhamento financeiro
-            para a satisfação de nossos clientes
+            Nossa experiencia no ramo imobiliário está presente deste o inicio
+            de uma obra até a assessoria na captação dos recursos para aquisição
+            de sua casa, negocio ou investimento.
+          </p>
+          <p>
+            A CASHBUID é capaz de oferecer oportunidades de investimento,
+            instalação de um negócio próprio ou a melhor opção para sua moradia
+            e conforto de sua família.
+          </p>
+          <p>
+            Podemos lhe assessorar desde a compra de um imóvel ou até no
+            planejamento financeiro para realização de um sonho. Com nossa
+            experiencia nos mercados imobiliários e financeiros, podemos trazer
+            grandes oportunidades além de uma assessoria completa naquilo que
+            nos proporcionamos à fazer.
           </p>
         </div>
       </AboutSection>
