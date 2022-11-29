@@ -197,6 +197,12 @@ const PropertiesComponent = () => {
                       onClick={() => router.push(`/property/${index}`)}
                       style={{ cursor: "pointer" }}
                       placeholder="blur"
+                      sizes="(max-width: 1400px) 30vw,
+                      (max-width: 1200px) 35vw,
+                      (max-width: 950px) 40vw,
+                      (max-width: 800px) 44vw,
+                      (max-width: 430px) 46vw,
+                      25vw"
                     />
                     <h3>{name}</h3>
 
