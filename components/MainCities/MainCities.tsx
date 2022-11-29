@@ -31,7 +31,7 @@ const MainCities = () => {
     <CitiesSection>
       <h2>Localizações de nossas propriedades</h2>
       <p className="subtitle">
-        Saiba em quais cidades temos imóveis incríveis esperando por você 
+        Saiba em quais cidades temos imóveis incríveis esperando por você
       </p>
       <div className="container">
         <Slider {...settings}>
@@ -40,7 +40,14 @@ const MainCities = () => {
               <Card>
                 <div />
                 <h3>{name}</h3>
-                <Image src={image} alt="Imagem da cidade" quality={100} />
+                <Image
+                  src={image}
+                  alt="Imagem da cidade"
+                  sizes="(max-width: 1400px) 40vw,
+                      (max-width: 900px) 50vw,
+                      (max-width: 400px) 60vw,
+                      30vw"
+                />
               </Card>
             </CitiesDiv>
           ))}

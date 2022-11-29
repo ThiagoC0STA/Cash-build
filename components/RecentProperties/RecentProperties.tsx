@@ -81,6 +81,10 @@ const RecentProperties = () => {
                       onClick={() => router.push(`/property/${index}`)}
                       src={mainImage}
                       alt="Imagem da propriedade"
+                      sizes="(max-width: 1400px) 40vw,
+                      (max-width: 800px) 50vw,
+                      (max-width: 400px) 60vw,
+                      33vw"
                     />
 
                     <h3>{name}</h3>

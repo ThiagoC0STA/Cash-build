@@ -44,7 +44,7 @@ export const HeaderComponent = styled.header`
       gap: 10px;
       align-items: center;
       padding: 6px 12px;
-      background-color: #25d366;
+      background-color: #119944;
       border: none;
       border-radius: 7px;
     }

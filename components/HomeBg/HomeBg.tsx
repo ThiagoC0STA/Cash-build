@@ -11,9 +11,7 @@ const HomeBg = () => {
         src={HomeBgImage}
         priority={true}
         placeholder="blur"
-        sizes="(max-width: 850px) 50vw,
-        (max-width: 425px) 25vw
-        "
+        sizes="80vw"
       />
 
       <div>
