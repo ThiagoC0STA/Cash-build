@@ -43,10 +43,11 @@ const MainCities = () => {
                 <Image
                   src={image}
                   alt="Imagem da cidade"
-                  sizes="(max-width: 1400px) 40vw,
-                      (max-width: 900px) 50vw,
-                      (max-width: 400px) 60vw,
-                      30vw"
+                  sizes="(max-width: 900px) 30vw,
+                      (max-width: 720px) 34vw,
+                      (max-width: 590px) 35vw,
+                      (max-width: 450px) 37vw,
+                      22vw"
                 />
               </Card>
             </CitiesDiv>
