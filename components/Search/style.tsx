@@ -81,7 +81,7 @@ export const Container = styled.div`
     }
 
     label {
-      font-weight: 600;
+      font-weight: 700;
       font-size: 1rem;
       line-height: 24px;
       color: #2c3a61;

@@ -61,7 +61,7 @@ export const Card = styled.div`
   }
 
   h3 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.313rem;
     line-height: 1.8rem;
     color: #363a3d;
@@ -70,10 +70,18 @@ export const Card = styled.div`
   }
 
   h4 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.75rem;
     color: #4a60a1;
+  }
+
+  h5 {
+    font-weight: 500;
+  }
+
+  figcaption {
+    font-weight: 300;
   }
 
   @media (max-width: 1500px) {
