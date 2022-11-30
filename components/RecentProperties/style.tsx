@@ -39,6 +39,7 @@ export const Card = styled.div`
   box-shadow: 0 0 10px rgba(59, 77, 129, 0.08);
   border-radius: 6.5px;
   border: 1px solid rgb(221, 221, 221);
+  animation: fadeIn 1s;
 
   img {
     width: 100%;
@@ -46,6 +47,7 @@ export const Card = styled.div`
     object-fit: cover;
     border-radius: 6.5px 6.5px 0px 0px;
     cursor: pointer;
+    animation: fadeIn 1s;
   }
 
   .price {
@@ -54,6 +56,7 @@ export const Card = styled.div`
     justify-content: start;
     margin-top: 1.97rem;
     margin-left: 20px;
+    animation: fadeIn 1s;
 
     p {
       font-size: 0.813rem;
@@ -67,6 +70,7 @@ export const Card = styled.div`
     color: #363a3d;
     margin: 2.96vh 20px 0 20px;
     min-height: 7.4vh;
+    animation: fadeIn 1s;
   }
 
   h4 {
@@ -74,14 +78,29 @@ export const Card = styled.div`
     font-size: 1.25rem;
     line-height: 1.75rem;
     color: #4a60a1;
+    animation: fadeIn 1s;
   }
 
   h5 {
     font-weight: 500;
+    animation: fadeIn 1s;
+  }
+
+  figure {
+    animation: fadeIn 1s;
   }
 
   figcaption {
     font-weight: 300;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   @media (max-width: 1500px) {
@@ -324,6 +343,7 @@ export const Info = styled.div`
   justify-content: center;
   gap: 35px;
   margin: 10px 20px 0 20px;
+  animation: fadeIn 1s;
 
   div {
     img {
@@ -375,6 +395,15 @@ export const Info = styled.div`
       background-color: #e7e9eb;
       z-index: 1;
       position: absolute;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 
@@ -561,6 +590,7 @@ export const BlueDiv = styled.div`
   position: absolute;
   z-index: 1;
   margin: 7px;
+  animation: fadeIn 1s;
 
   .blue {
     background-color: #4a60a1;
@@ -568,6 +598,15 @@ export const BlueDiv = styled.div`
 
   .green {
     background-color: #00a325;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   @media (max-width: 580px) {

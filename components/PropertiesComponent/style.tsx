@@ -19,7 +19,8 @@ export const Filters = styled.div`
   width: 80vw;
   margin-left: -15px;
   margin-bottom: 50px;
-  background: #ececec;
+  background: rgb(253 253 253);
+  box-shadow: 0 0 3px #c7c7c7;
   padding: 20px 20px;
   border-radius: 6px;
 
@@ -33,7 +34,7 @@ export const Filters = styled.div`
   }
 
   .selected {
-    font-weight: bold;
+    font-weight: 700;
   }
 
   div {
