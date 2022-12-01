@@ -31,7 +31,6 @@ const OtherBgs = () => {
         src={BackgroundImage}
         alt="papel de parede representando uma casa"
         priority={true}
-        placeholder="blur"
       />
 
       <Texts>
