@@ -145,7 +145,7 @@ const Property = () => {
               garages,
               bathrooms,
               bedrooms,
-              city,
+              district,
               address,
               description,
             }: any,
@@ -181,7 +181,7 @@ const Property = () => {
               <Location>
                 <div>
                   <Image src={LocationIcon} alt="Localização" />
-                  <p>{address + ", " + city}</p>
+                  <p>{address + ", " + district}</p>
                 </div>
 
                 <div>
