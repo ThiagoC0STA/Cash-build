@@ -35,6 +35,7 @@ export const Filters = styled.div`
 
   .selected {
     font-weight: 700;
+    color: #009dd9;
   }
 
   div {
