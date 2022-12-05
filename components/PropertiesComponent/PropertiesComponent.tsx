@@ -123,7 +123,7 @@ const PropertiesComponent = () => {
             id="districtSelec"
             onChange={(e) => setDistrictSelected(e.target.value)}
           >
-            <option value="Todos os bairros">Todas os bairros</option>
+            <option value="Todos os bairros">Todos os bairros</option>
             {cities.map((item: any, index: any) => (
               <option key={index}>{item}</option>
             ))}
