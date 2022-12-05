@@ -57,10 +57,6 @@ export const Card = styled.div`
     margin-top: 1.97rem;
     margin-left: 20px;
     animation: fadeIn 1s;
-
-    p {
-      font-size: 0.813rem;
-    }
   }
 
   h3 {
@@ -74,7 +70,7 @@ export const Card = styled.div`
   }
 
   h4 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.75rem;
     color: #4a60a1;
@@ -581,7 +577,7 @@ export const Info = styled.div`
 `;
 
 export const BlueDiv = styled.div`
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14.9515px;
   line-height: 23px;
   color: #ffffff;
