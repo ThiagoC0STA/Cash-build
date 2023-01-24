@@ -41,26 +41,26 @@ const Header = () => {
         Cash Build
       </Link>
 
-      {mobile && (
+      {mobile && typeof window !== "undefined" ? (
         <Image
           src={currentHeader === "whiteHeader" ? WhiteMenuIcon : BlackMenuIcon}
           onClick={() => setModal(!modal)}
           alt="menu"
         />
-      )}
+      ) : ""}
 
       <div
-        className={mobile ? "mobileNav" : ""}
+        className={mobile && typeof window !== "undefined" ? "mobileNav" : ""}
         style={modal ? { right: "0" } : { right: "-55vw" }}
       >
-        {mobile && (
+        {mobile && typeof window !== "undefined" ? (
           <Image
             className="close"
             onClick={() => setModal(!modal)}
             src={CloseWhiteIcon}
             alt="fechar"
           />
-        )}
+        ): ""}
         <nav
           style={
             currentHeader === "whiteHeader"
