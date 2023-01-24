@@ -20,11 +20,7 @@ export const GlobalContext = ({ children }: any) => {
   const [width, setWidth] = useState(() => {
     return typeof window !== "undefined" ? window.innerWidth : 0;
   });
-    const [mobile, setMobile] = useState<any>(() => {
-    if (typeof window !== "undefined") {
-      width < 1000 ? true : false;
-    }
-  });
+    const [mobile, setMobile] = useState<boolean>(false);
 
   const location = useRouter();
 
